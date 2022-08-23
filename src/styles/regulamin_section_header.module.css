@@ -1,0 +1,10 @@
+.regulamin_section_header {
+  font-family: Open Sans, sans-serif;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  color: white;
+  font-weight: bold;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  padding-inline: 1rem;
+}

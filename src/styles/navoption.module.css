@@ -1,0 +1,12 @@
+.nav_option {
+  transition: all 0.2s;
+}
+
+.tak {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.number_5 {
+  grid-row-start: 8;
+}

@@ -1,0 +1,25 @@
+.electronic_screen {
+  position: fixed;
+  top: 50vh;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  background-image: repeating-linear-gradient(
+    rgba(0, 128, 0, 0.2) 0 10px,
+    rgba(0, 178, 76, 0.2) 10px 12px
+  );
+  backdrop-filter: brightness(250%);
+  margin: 0;
+  pointer-events: none;
+
+  transition: width 0.4s ease-in 2.8s, height 0.8s ease-in 2.2s;
+
+  z-index: 10;
+}
+
+.electronic_screen_on {
+  /* width: 100vw; */
+  width: min(80rem, 95vw);
+  height: 85vh;
+}

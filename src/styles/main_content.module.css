@@ -1,0 +1,10 @@
+.main_content {
+  position: absolute;
+  top: 140vh;
+  transition: top 2.1s ease-out;
+  width: 100%;
+}
+
+.content_scrolled {
+  top: 0vh;
+}

@@ -1,0 +1,51 @@
+.regulamin_background {
+  width: min(80rem, 100%);
+  background: #111;
+  margin: auto;
+  padding-top: 6rem;
+}
+
+.regulamin_list {
+  list-style-type: decimal;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  line-height: 1.35;
+}
+
+.regulamin_list > li {
+  padding-bottom: 1rem;
+}
+
+.regulamin_clarification {
+  list-style-type: decimal;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  line-height: 1.35;
+  padding-bottom: 1rem;
+}
+
+.regulamin_list_2nd_level {
+  list-style-type: lower-alpha;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  line-height: 1.35;
+}
+
+.regulamin_list_3rd_level {
+  list-style-type: lower-roman;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 2.5rem;
+  padding-right: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  line-height: 1.35;
+}

@@ -1,0 +1,21 @@
+.space_header {
+  text-align: center;
+  /* display: inline-block; */
+  /* background: #800; */
+  color: #888;
+  /* font-family: "Rubik Glitch", sans-serif; */
+  font-family: 'Bungee Shade', sans-serif;
+  /* font-family: "Goldman", sans-serif; */
+  /* font-family: "Suez One", sans-serif; */
+  /* font-family: "Space Grotesk", sans-serif; */
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Alumni Sans", sans-serif; */
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+
+  font-size: clamp(1.75rem, 8vw, 3.25rem);
+
+  max-width: min(70rem, 90vw);
+  margin-inline: auto;
+}

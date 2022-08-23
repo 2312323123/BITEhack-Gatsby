@@ -2,12 +2,9 @@ import * as React from 'react'
 import { useState, useRef, useEffect } from 'react'
 import NavBar from '../components/commonComponents/NavBar'
 import RuchomeTlo from '../components/commonComponents/RuchomeTlo'
-import MainFrame from '../components/commonComponents/MainFrame'
-import BlurScreen from '../components/mainPageComponents/BlurScreen'
-import ElectronicScreen from '../components/mainPageComponents/ElectronicScreen'
-import MainContent from '../components/mainPageComponents/MainContent'
+import RegulaminContent from '../components/regulaminPageComponents/RegulaminContent'
 
-export default ({ location }) => {
+const Regulamin = ({ location }) => {
   const [turnedOn, setTurnedOn] = useState(
     location.state ? location.state.turnedOn : false
   )
@@ -27,8 +24,6 @@ export default ({ location }) => {
     location.state ? location.state.contentScrolled : false
   )
 
-  console.log('turnedOn: ' + turnedOn.toString())
-
   useEffect(() => {
     window.onscroll = () => {
       lastWindowY.current = newWindowY
@@ -36,13 +31,6 @@ export default ({ location }) => {
       console.count('UseEffect entered')
     }
   }, [newWindowY, setNewWindowY, lastWindowY.current])
-
-  useEffect(() => {
-    // scrolluje tylko jak jest menu na duze ekrany, w mniejszym sa kotwice
-    if (window.matchMedia('(min-width: 50rem)').matches) {
-      window.scrollTo(0, 0)
-    }
-  }, [])
 
   return (
     <>
@@ -60,35 +48,12 @@ export default ({ location }) => {
       />
 
       <RuchomeTlo newWindowY={newWindowY} lastWindowY={lastWindowY} />
-      <MainFrame
-        turnedOn={turnedOn}
-        setTurnedOn={setTurnedOn}
-        lastWindowY={lastWindowY}
-        newWindowY={newWindowY}
-      />
-      <BlurScreen blurOn={blurOn} setBlurOn={setBlurOn} />
-      <MainContent
-        contentScrolled={contentScrolled}
-        setContentScrolled={setContentScrolled}
-      />
-      <ElectronicScreen
-        electronicOn={electronicOn}
-        setElectronicOn={setElectronicOn}
-      />
+
+      <RegulaminContent />
     </>
   )
 }
 
-export const Head = () => (
-  <>
-    <meta charset="UTF-8" />
-    <title>BITEhack 2023</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../../static/favicon.ico" />
-    <meta
-      name="description"
-      content="BITEhack jest konkursem programistyczno- robotycznym dla studentów organizowanym w Klubie Studio zaraz przy Akademii Górniczo-Hutniczej w Krakowie."
-    />
-    <meta name="author" content="Maciej Piotrowski" />
-  </>
-)
+export { Head } from './index'
+
+export default Regulamin

@@ -1,0 +1,16 @@
+.space_paragraph {
+  color: #888;
+  margin: 1rem;
+  padding: 1rem;
+  /* display: inline-block; */
+  /* background: #800; */
+  background: #0008;
+  /* text-align: justify; */
+  line-height: 1.35;
+  margin: auto;
+
+  font-family: 'Open Sans', Verdana;
+  font-size: clamp(1rem, 3vw, 1.4rem);
+
+  max-width: min(70rem, 90vw);
+}

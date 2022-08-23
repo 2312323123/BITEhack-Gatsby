@@ -1,0 +1,114 @@
+/* ten grid */
+
+body {
+  background: #ccc;
+}
+
+.navbar {
+  display: grid;
+  place-items: center;
+  grid-template-columns: auto 1fr auto auto auto;
+  background-color: blue;
+  position: sticky;
+  top: 0;
+}
+
+.navbar_link_1 {
+  grid-column-start: 3;
+}
+
+.navbar_link_2 {
+  grid-column-start: 4;
+}
+
+.navbar_link_3 {
+  grid-column-start: 5;
+}
+
+.navbar_link {
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* nowe */
+
+.nav_content_container {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 12;
+
+  /* display: grid; */ /* is in .nav-content-container-opened */
+  grid-template-columns: 100%;
+  grid-template-rows:
+    3fr repeat(4, minmax(2rem, 1fr)) 2fr repeat(2, minmax(2rem, 1fr))
+    3fr;
+  grid-auto-flow: column;
+  justify-content: end;
+  justify-items: end;
+
+  padding-right: 2rem;
+
+  background-size: 300% 300%, 300% 210%;
+  background-image: radial-gradient(
+      circle farthest-corner at 100% 0%,
+      navy,
+      transparent calc(200% / 3)
+    ),
+    radial-gradient(
+      circle farthest-corner at 100% calc(2000% / 21),
+      navy,
+      transparent 55%
+    );
+
+  transition: background-position 1s;
+  /* animation: gradient 2s ease infinite; */
+}
+
+.nav_content_container_opened {
+  display: grid;
+  background-position: 100% 0, 100% 100%;
+}
+
+.nav_content_container_closed {
+  display: grid;
+  pointer-events: none;
+  background-position: 0 100%, 0 0;
+}
+
+.nav_content_logo {
+  width: min(100%, 16rem);
+  height: auto;
+  place-self: center left;
+  user-select: none;
+  position: relative;
+  transition: opacity 0.2s, transform 0.2s;
+}
+.nav_content_logo_opened {
+  transition-delay: 0.08s;
+}
+.nav_content_logo_closed {
+  transform: translateY(-100px);
+  opacity: 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 100%, 0 0;
+  }
+  50% {
+    /* background-position: calc(200%/3) 0; */
+    background-position: 100% 0, 100% 100%;
+  }
+  100% {
+    background-position: 0% 100%, 0 0;
+  }
+}
+
+@media (min-width: 50rem) {
+  .nav_content_container {
+    display: none;
+  }
+}

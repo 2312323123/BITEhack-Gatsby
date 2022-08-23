@@ -1,0 +1,81 @@
+.main_background {
+  --width: 100vw;
+  --height: 100vh;
+  width: var(--width);
+  height: var(--height);
+  background: black;
+  /* outline: 2px solid black; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.speed_1_container {
+  width: var(--width);
+  height: var(--height);
+
+  animation: container-animation 16s linear infinite;
+  position: absolute;
+  /* background: #f008; */
+}
+
+.speed_1_child {
+  width: var(--width);
+  height: var(--height);
+
+  animation: element-animation 32s linear infinite;
+  position: relative;
+}
+
+.speed_2_container {
+  width: var(--width);
+  height: var(--height);
+
+  animation: container-animation 8s linear infinite;
+  position: absolute;
+  /* background: #f008; */
+}
+
+.speed_2_child {
+  width: var(--width);
+  height: var(--height);
+
+  animation: element-animation 16s linear infinite;
+  position: relative;
+}
+
+.speed_3_container {
+  width: var(--width);
+  height: var(--height);
+
+  animation: container-animation 4s linear infinite;
+  position: absolute;
+  /* background: #f008; */
+}
+
+.speed_3_child {
+  width: var(--width);
+  height: var(--height);
+
+  animation: element-animation 8s linear infinite;
+  position: relative;
+}
+
+@keyframes container-animation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes element-animation {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

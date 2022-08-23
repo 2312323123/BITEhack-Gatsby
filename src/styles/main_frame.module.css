@@ -1,0 +1,122 @@
+.main_frame_container {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.main_frame_frame {
+  --image-size: 15vmax;
+
+  /* border: 7.5vmax solid red; */
+  border: 7.5vmax solid transparent;
+  border-image: url('../../static/tak2.png') 100 repeat;
+  width: var(--image-size);
+  height: var(--image-size);
+  /* transition: width cubic-bezier(.9, 0, .69, 1) 1.5s 0.5s,
+    height cubic-bezier(.9, 0, .69, 1) 1.5s 0.5s; */
+  transition: width ease-out 1.5s 0.5s, height ease-out 1.5s 0.5s;
+  position: relative;
+}
+
+.main_frame_frame_opened {
+  height: 80vh;
+  /* width: 95vw; */
+  width: min(80rem, 95vw);
+}
+
+.spark_off {
+  display: none;
+}
+
+.spark_1 {
+  position: absolute;
+  top: -15vmax;
+  left: -6.5vmax;
+  width: 7.5vmax;
+  height: 7.5vmax;
+  /* background: navy; */
+  /* background: orange; */
+}
+
+.spark_2 {
+  position: absolute;
+  top: -15vmax;
+  right: -6.5vmax;
+  width: 7.5vmax;
+  height: 7.5vmax;
+  /* background: navy; */
+  /* background: orange; */
+  transform: scaleX(-1);
+}
+
+.spark_3 {
+  position: absolute;
+  bottom: -15vmax;
+  left: -6.5vmax;
+  width: 7.5vmax;
+  height: 7.5vmax;
+  /* background: navy; */
+  /* background: orange; */
+  transform: rotate(180deg) scaleX(-1);
+}
+
+.spark_4 {
+  position: absolute;
+  bottom: -15vmax;
+  right: -6.5vmax;
+  width: 7.5vmax;
+  height: 7.5vmax;
+  /* background: navy; */
+  /* background: orange; */
+  transform: rotate(180deg);
+}
+
+.flame {
+  width: 4vmax;
+  height: 7.5vmax;
+  background: transparent
+    radial-gradient(farthest-side at center 90%, cyan 10%, transparent); /* main flame color here */
+  position: absolute;
+  left: -0.4vmax;
+  bottom: 0;
+  animation: flame_move linear 0.05s infinite alternate;
+  transform-origin: center bottom;
+}
+.flame::before {
+  content: '';
+  position: absolute;
+  width: 4vmax;
+  height: 20vmax;
+  background: radial-gradient(at bottom, black, transparent);
+  bottom: 0;
+  left: -0.3vmax;
+  /* clip-path: polygon(0 100%, 50% 0, 100% 100%); */
+  -webkit-mask-image: radial-gradient(at bottom, #fff4, transparent);
+  mask-image: radial-gradient(at bottom, #fff4, transparent);
+  transform: rotate(-5deg);
+  animation: flame_move linear 0.05s infinite alternate;
+}
+.flame::after {
+  content: '';
+  position: absolute;
+  width: 4vmax;
+  height: 20vmax;
+  background: radial-gradient(at bottom, rgb(176, 243, 243), transparent);
+  bottom: 0;
+  right: 0.3vmax;
+  /* clip-path: polygon(0 100%, 50% 0, 100% 100%); */
+  -webkit-mask-image: radial-gradient(at bottom, #fff4, transparent);
+  mask-image: radial-gradient(at bottom, #fff4, transparent);
+  transform: rotate(5deg);
+  animation: flame_move linear 0.05s infinite alternate;
+}
+@keyframes flame_move {
+  from {
+    transform: rotate(-1deg);
+  }
+  to {
+    transform: rotate(1deg);
+  }
+}
