@@ -11,7 +11,7 @@
 
   /* border: 7.5vmax solid red; */
   border: 7.5vmax solid transparent;
-  border-image: url('../../static/tak2.png') 100 repeat;
+  border-image: url('../images/mainframe.png') 100 repeat;
   width: var(--image-size);
   height: var(--image-size);
   /* transition: width cubic-bezier(.9, 0, .69, 1) 1.5s 0.5s,

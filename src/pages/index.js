@@ -82,7 +82,7 @@ export const Head = () => (
     <meta charset="UTF-8" />
     <title>BITEhack 2023</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../../static/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
     <meta
       name="description"
       content="BITEhack jest konkursem programistyczno- robotycznym dla studentów organizowanym w Klubie Studio zaraz przy Akademii Górniczo-Hutniczej w Krakowie."
