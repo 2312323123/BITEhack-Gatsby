@@ -27,8 +27,6 @@ export default ({ location }) => {
     location.state ? location.state.contentScrolled : false
   )
 
-  console.log('turnedOn: ' + turnedOn.toString())
-
   useEffect(() => {
     window.onscroll = () => {
       lastWindowY.current = newWindowY

@@ -12,7 +12,8 @@
   position: relative;
 
   /* electronic screen is 10, navbar 12 (.nav-content-container), navbutton 13 */
-  z-index: 11;
+  /* z-index: 11; */
+  filter: brightness(40%);
 
   display: block;
   margin-inline: auto;

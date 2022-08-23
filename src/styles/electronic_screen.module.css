@@ -6,8 +6,8 @@
   height: 0;
   transform: translate(-50%, -50%);
   background-image: repeating-linear-gradient(
-    rgba(0, 128, 0, 0.2) 0 10px,
-    rgba(0, 178, 76, 0.2) 10px 12px
+    rgba(0, 128, 0, 0.1) 0 10px,
+    rgba(0, 178, 76, 0.1) 10px 12px
   );
   backdrop-filter: brightness(250%);
   margin: 0;

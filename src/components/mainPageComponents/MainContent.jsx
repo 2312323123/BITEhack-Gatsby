@@ -81,7 +81,7 @@ maksymalnie z 4 osób."
       <div style={{ height: '7.5vh' }}></div>
       <SpaceHeader header="PRZEBIEG WYDARZENIA" />
       <SpaceParagraph
-        paragraph="Uczestnicy hackatonu mają 24 godziny na zaproponowanie i
+        paragraph="Uczestnicy hackathonu mają 24 godziny na zaproponowanie i
 przedstawienie własnego pomysłu na zadany w temacie 
 problem.
 Wyniki końcowe zespołów oceniać będzie jury składające się z 
@@ -95,7 +95,7 @@ naukowych Akademii Górniczo-Hutniczej. "
         paragraph="Dzięki zapisom na wydarzenie możecie spędzić wspólnie czas ze
 znajomymi, poznać innych kreatywnych studentów, nabyć 
 potrzebnego doświadczenia i nauczyć się rozwiązywania 
-problemów pracując w zespole. Hackaton jest również świetną 
+problemów pracując w zespole. Hackathon jest również świetną 
 okazją do nawiązania kontaktów z przedstawicielami 
 największych firm na krakowskim rynku IT. Będziecie mieli 
 również okazję na wzięcie udziału w speed recruitment 
