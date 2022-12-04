@@ -16,10 +16,18 @@ export default ({ location }) => {
     location.state ? location.state.electronicOn : false
   )
   const lastWindowY = useRef(
-    location.state ? location.state.lastWindowY : window.scrollY
+    typeof window !== 'undefined' && window !== null
+      ? location.state
+        ? location.state.lastWindowY
+        : window.scrollY
+      : null
   )
   const [newWindowY, setNewWindowY] = useState(
-    location.state ? location.state.newWindowY : window.scrollY
+    typeof window !== 'undefined' && window !== null
+      ? location.state
+        ? location.state.newWindowY
+        : window.scrollY
+      : null
   )
   const [contentScrolled, setContentScrolled] = useState(
     location.state ? location.state.contentScrolled : false
