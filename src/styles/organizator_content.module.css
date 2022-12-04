@@ -1,6 +1,7 @@
 .people {
   margin-top: 2rem;
-  color: #888;
+  /* color: #888; */
+  color: white;
   max-width: min(70rem, 90vw);
   margin: auto;
 }
@@ -13,7 +14,7 @@
 
   /* electronic screen is 10, navbar 12 (.nav-content-container), navbutton 13 */
   /* z-index: 11; */
-  filter: brightness(40%);
+  /* filter: brightness(40%); */
 
   display: block;
   margin-inline: auto;

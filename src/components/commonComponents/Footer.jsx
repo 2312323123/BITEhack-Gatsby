@@ -1,6 +1,7 @@
 import * as React from 'react'
 import * as styles from '../../styles/footer.module.css'
-import logo from '../../images/logo_best.png'
+// import logo from '../../images/logo_best.png'
+import logo from '../../images/logo_best_white.png'
 
 export default function Footer() {
   return (

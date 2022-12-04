@@ -23,12 +23,25 @@ const Regulamin = ({ location }) => {
   const [contentScrolled, setContentScrolled] = useState(
     location.state ? location.state.contentScrolled : false
   )
+  const [menuOpened, setMenuOpened] = useState(
+    location.state ? location.state.menuOpened : false
+  )
+
+  useEffect(() => {
+    if (
+      typeof location.state !== 'undefined' &&
+      location.state !== null &&
+      typeof location.state.notRefreshed !== 'undefined'
+    ) {
+      window.history.replaceState({}, document.title)
+    }
+  }, [])
 
   useEffect(() => {
     window.onscroll = () => {
       lastWindowY.current = newWindowY
       setNewWindowY(window.scrollY)
-      console.count('UseEffect entered')
+      // console.count('UseEffect entered')
     }
   }, [newWindowY, setNewWindowY, lastWindowY.current])
 
@@ -45,6 +58,8 @@ const Regulamin = ({ location }) => {
         setElectronicOn={setElectronicOn}
         contentScrolled={contentScrolled}
         setContentScrolled={setContentScrolled}
+        menuOpened={menuOpened}
+        setMenuOpened={setMenuOpened}
       />
 
       <RuchomeTlo newWindowY={newWindowY} lastWindowY={lastWindowY} />

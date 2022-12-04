@@ -1,12 +1,34 @@
 .nav_option {
   transition: all 0.2s;
+  position: relative;
+  padding-left: 3.5rem;
+}
+
+.nav_option:hover {
+  transition-delay: 0s;
+}
+
+.nav_option > a::after {
+  content: '';
+  height: 1.5rem;
+  width: 100%;
+  background-image: linear-gradient(
+    #b63c37 29%,
+    transparent 29% 36%,
+    #b63c37 36% 64%,
+    transparent 64% 71%,
+    #b63c37 71%
+  );
+  position: absolute;
+  right: calc(100% - 3rem);
+  top: 0.2rem;
 }
 
 .tak {
   opacity: 0;
-  transform: translateX(100px);
+  transform: translateX(-100px);
 }
 
-.number_5 {
-  grid-row-start: 8;
+.number_1 {
+  grid-row-start: 2;
 }

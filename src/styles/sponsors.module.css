@@ -12,7 +12,7 @@
 
   border-radius: 1rem;
 
-  filter: brightness(40%);
+  /* filter: brightness(40%); */
 }
 
 .sponsors {
@@ -36,7 +36,7 @@
 
   margin-bottom: 1rem;
 
-  filter: brightness(40%);
+  /* filter: brightness(40%); */
 }
 
 @media (min-width: 40rem) {

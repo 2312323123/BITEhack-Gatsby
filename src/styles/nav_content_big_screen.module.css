@@ -12,14 +12,32 @@
     position: fixed;
     transition: all 0.4s;
 
-    width: min(70rem, 90vw);
+    /* width: min(70rem, 90vw); */
+    width: 100%;
+    background: lime;
     margin-inline: auto;
     /* background: red; */
     background: linear-gradient(#0008, transparent);
 
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
+    display: grid;
+    grid-template-columns:
+      1fr minmax(10px, 1.2fr) minmax(10px, 1fr) minmax(10px, 1.5fr)
+      minmax(10px, 1fr) minmax(10px, 1.2fr) 1fr;
+    align-items: center;
+  }
+
+  .big_nav_lines {
+    height: clamp(1rem, 2.2vw, 1.8em);
+    width: 100%;
+    background-image: linear-gradient(
+      #eed2bc 29%,
+      transparent 29% 36%,
+      #eed2bc 36% 64%,
+      transparent 64% 71%,
+      #eed2bc 71%
+    );
   }
 
   .nav > * {
@@ -48,12 +66,12 @@
   .nav_button_background {
     display: inline-block;
     text-align: center;
-    width: 80%;
+    width: 100%;
     height: calc(var(--min-height) * 0.8);
     /* clip-path: */
-    background: rgba(56, 112, 145, 0.75);
+    /* background: rgba(56, 112, 145, 0.75); */
 
-    clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%);
+    /* clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%); */
 
     right: 0;
     top: 50%;
@@ -69,8 +87,8 @@
     line-height: calc(var(--min-height) * 0.8);
 
     font-weight: bold;
-    font-family: 'Open Sans', Verdana;
-    font-size: clamp(1rem, 2vw, 1.6em);
+    font-family: 'Montserrat', Verdana;
+    font-size: clamp(1rem, 2.2vw, 1.8em);
     color: white;
     text-decoration: none;
     /* top: 50%; */

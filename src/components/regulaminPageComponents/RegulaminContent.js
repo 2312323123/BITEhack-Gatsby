@@ -3,11 +3,12 @@ import * as styles from '../../styles/regulamin_content.module.css'
 import RegulaminHeader from './RegulaminHeader'
 import RegulaminSectionHeader from './RegulaminSectionHeader'
 import FooterRegulamin from '../commonComponents/FooterRegulamin'
+import SpaceHeader from '../commonComponents/SpaceHeader'
 
 export default function RegulaminContent() {
   return (
     <main className={styles['regulamin_background']}>
-      <RegulaminHeader header="REGULAMIN" />
+      <SpaceHeader header="REGULAMIN" />
       <RegulaminSectionHeader header="§1" />
       <RegulaminSectionHeader header="POSTANOWIENIA OGÓLNE" />
       <ol className={styles['regulamin_list']}>
@@ -481,6 +482,36 @@ export default function RegulaminContent() {
           niniejszego Regulaminu.
         </li>
       </ol>
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="/rodo.pdf"
+        style={{
+          textAlign: 'center',
+          display: 'block',
+          color: 'white',
+          fontFamily: '"Open Sans", sans-serif',
+          fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
+          lineHeight: '1.35',
+        }}
+      >
+        Informacje o danych osobowych
+      </a>
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="/rodoCV.pdf"
+        style={{
+          textAlign: 'center',
+          display: 'block',
+          color: 'white',
+          fontFamily: '"Open Sans", sans-serif',
+          fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
+          lineHeight: '1.35',
+        }}
+      >
+        Informacje o danych osobowych CV
+      </a>
       <FooterRegulamin />
     </main>
   )

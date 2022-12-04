@@ -7,13 +7,13 @@ import Footer from '../commonComponents/Footer'
 
 import * as styles from '../../styles/organizator_content.module.css'
 
-import Pawel from '../../images/picture1.jpg'
-import Anna from '../../images/picture2.jpg'
-import Weronika from '../../images/picture3.jpg'
-import Marta from '../../images/picture4.jpg'
-import Konrad from '../../images/picture5.jpg'
-import Maciej from '../../images/picture6.jpg'
-import Tomasz from '../../images/picture7.jpg'
+import Pawel from '../../images/Pawel.jpg'
+import Anna from '../../images/Anna.jpg'
+import Hubert from '../../images/HACKATHON.png'
+import Marta from '../../images/Marta.jpg'
+import Konrad from '../../images/Konrad.jpg'
+import Maciej from '../../images/Maciej.jpg'
+import Tomasz from '../../images/Tomasz.jpg'
 import { useIntersection } from '../commonComponents/useIntersection'
 
 export default function OrganizatorContent(props) {
@@ -107,8 +107,8 @@ export default function OrganizatorContent(props) {
           className={`${styles['picture']} ${styles['picture_odd']} ${
             inViewport3 ? styles['visible'] : ''
           }`}
-          src={Weronika}
-          alt={'Weronika Pisarska'}
+          src={Hubert}
+          alt={'Hubert Sujka'}
         />
         <div
           className={`${styles['organizator_info_container']} ${
@@ -116,11 +116,11 @@ export default function OrganizatorContent(props) {
           } ${inViewport3 ? styles['visible'] : ''}`}
         >
           <h2 className={styles['organizator_info_container_name']}>
-            Weronika Pisarska
+            Hubert Sujka
           </h2>
           <h2>Koordynator ds. Promocji</h2>
-          <a href="mailto:weronika.pisarska@best.krakow.pl">
-            <h2>weronika.pisarska@best.krakow.pl</h2>
+          <a href="mailto:hubert.sujka@best.krakow.pl">
+            <h2>hubert.sujka@best.krakow.pl</h2>
           </a>
         </div>
 

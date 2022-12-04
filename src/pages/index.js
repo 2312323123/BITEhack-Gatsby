@@ -6,6 +6,7 @@ import MainFrame from '../components/commonComponents/MainFrame'
 import BlurScreen from '../components/mainPageComponents/BlurScreen'
 import ElectronicScreen from '../components/mainPageComponents/ElectronicScreen'
 import MainContent from '../components/mainPageComponents/MainContent'
+import PlanetaTlo from '../components/commonComponents/PlanetaTlo'
 
 export default ({ location }) => {
   const [turnedOn, setTurnedOn] = useState(
@@ -26,12 +27,24 @@ export default ({ location }) => {
   const [contentScrolled, setContentScrolled] = useState(
     location.state ? location.state.contentScrolled : false
   )
+  const [menuOpened, setMenuOpened] = useState(
+    location.state ? location.state.menuOpened : false
+  )
 
+  useEffect(() => {
+    if (
+      typeof location.state !== 'undefined' &&
+      location.state !== null &&
+      typeof location.state.notRefreshed !== 'undefined'
+    ) {
+      window.history.replaceState({}, document.title)
+    }
+  }, [])
   useEffect(() => {
     window.onscroll = () => {
       lastWindowY.current = newWindowY
       setNewWindowY(window.scrollY)
-      console.count('UseEffect entered')
+      // console.count('UseEffect entered')
     }
   }, [newWindowY, setNewWindowY, lastWindowY.current])
 
@@ -55,24 +68,27 @@ export default ({ location }) => {
         setElectronicOn={setElectronicOn}
         contentScrolled={contentScrolled}
         setContentScrolled={setContentScrolled}
+        menuOpened={menuOpened}
+        setMenuOpened={setMenuOpened}
       />
 
       <RuchomeTlo newWindowY={newWindowY} lastWindowY={lastWindowY} />
-      <MainFrame
+      <PlanetaTlo newWindowY={newWindowY} />
+      {/* <MainFrame
         turnedOn={turnedOn}
         setTurnedOn={setTurnedOn}
         lastWindowY={lastWindowY}
         newWindowY={newWindowY}
-      />
-      <BlurScreen blurOn={blurOn} setBlurOn={setBlurOn} />
+      /> */}
+      {/* <BlurScreen blurOn={blurOn} setBlurOn={setBlurOn} /> */}
       <MainContent
         contentScrolled={contentScrolled}
         setContentScrolled={setContentScrolled}
       />
-      <ElectronicScreen
+      {/* <ElectronicScreen
         electronicOn={electronicOn}
         setElectronicOn={setElectronicOn}
-      />
+      /> */}
     </>
   )
 }

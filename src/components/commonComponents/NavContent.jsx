@@ -6,9 +6,10 @@ import * as styles2 from '../../styles/navoption.module.css'
 
 export default function NavContent(props) {
   const linkStyle = {
-    fontSize: '1.25rem',
-    color: 'white',
-    fontFamily: "'Open Sans', Verdana",
+    fontSize: '2rem',
+    color: '#b63c37',
+    fontFamily: "'Montserrat', Verdana",
+    fontWeight: '800',
     textDecoration: 'none',
   }
 
@@ -22,9 +23,13 @@ export default function NavContent(props) {
         props.menuOpened
           ? styles['nav_content_container_opened']
           : styles['nav_content_container_closed']
+      } ${
+        props.menuOpened
+          ? styles['nav_content_container_fast_transition']
+          : styles['nav_content_container_slow_transition']
       }`}
     >
-      <img
+      {/* <img
         src={BITEhack_text}
         alt="BITEhack logo text"
         className={`${styles['nav_content_logo']} ${
@@ -32,63 +37,17 @@ export default function NavContent(props) {
             ? styles['nav_content_logo_opened']
             : styles['nav_content_logo_closed']
         }`}
-      />
-
-      <div
-        onClick={() => linkClick()}
-        style={{ transitionDelay: `${0.08 * 0}s` }}
-        className={`${styles2['nav_option']} ${
-          props.menuOpened ? '' : styles2['tak']
-        }`}
-      >
-        <Link
-          to={'/#opis'}
-          style={linkStyle}
-          state={{
-            turnedOn: props.turnedOn,
-            lastWindowY: props.lastWindowY.current,
-            newWindowY: props.newWindowY,
-            blurOn: props.blurOn,
-            electronicOn: props.electronicOn,
-            contentScrolled: props.contentScrolled,
-          }}
-        >
-          Opis
-        </Link>
-      </div>
-
-      <div
-        onClick={() => linkClick()}
-        style={{ transitionDelay: `${0.08 * 1}s` }}
-        className={`${styles2['nav_option']} ${
-          props.menuOpened ? '' : styles2['tak']
-        }`}
-      >
-        <Link
-          to={'/#kategorie'}
-          style={linkStyle}
-          state={{
-            turnedOn: props.turnedOn,
-            lastWindowY: props.lastWindowY.current,
-            newWindowY: props.newWindowY,
-            blurOn: props.blurOn,
-            electronicOn: props.electronicOn,
-            contentScrolled: props.contentScrolled,
-          }}
-        >
-          Kategorie
-        </Link>
-      </div>
+      /> */}
 
       <div
         onClick={() => linkClick()}
         style={{ transitionDelay: `${0.08 * 2}s` }}
         className={`${styles2['nav_option']} ${
           props.menuOpened ? '' : styles2['tak']
-        }`}
+        } ${styles2['number_1']}`}
       >
         <Link
-          to={'/#oprojekcie'}
+          to={'/regulamin'}
           style={linkStyle}
           state={{
             turnedOn: props.turnedOn,
@@ -97,13 +56,65 @@ export default function NavContent(props) {
             blurOn: props.blurOn,
             electronicOn: props.electronicOn,
             contentScrolled: props.contentScrolled,
+            menuOpened: props.menuOpened,
+            notRefreshed: true,
           }}
         >
-          O projekcie, przebieg
+          Regulamin
         </Link>
       </div>
 
       <div
+        onClick={() => linkClick()}
+        style={{ transitionDelay: `${0.08 * 3}s` }}
+        className={`${styles2['nav_option']} ${
+          props.menuOpened ? '' : styles2['tak']
+        }`}
+      >
+        <Link
+          to={'/'}
+          style={linkStyle}
+          state={{
+            turnedOn: props.turnedOn,
+            lastWindowY: props.lastWindowY.current,
+            newWindowY: props.newWindowY,
+            blurOn: props.blurOn,
+            electronicOn: props.electronicOn,
+            contentScrolled: props.contentScrolled,
+            menuOpened: props.menuOpened,
+            notRefreshed: true,
+          }}
+        >
+          O projekcie
+        </Link>
+      </div>
+
+      <div
+        onClick={() => linkClick()}
+        style={{ transitionDelay: `${0.08 * 4}s` }}
+        className={`${styles2['nav_option']} ${
+          props.menuOpened ? '' : styles2['tak']
+        }`}
+      >
+        <Link
+          to={'/organizator'}
+          style={linkStyle}
+          state={{
+            turnedOn: props.turnedOn,
+            lastWindowY: props.lastWindowY.current,
+            newWindowY: props.newWindowY,
+            blurOn: props.blurOn,
+            electronicOn: props.electronicOn,
+            contentScrolled: props.contentScrolled,
+            menuOpened: props.menuOpened,
+            notRefreshed: true,
+          }}
+        >
+          Organizatorzy
+        </Link>
+      </div>
+
+      {/* <div
         onClick={() => linkClick()}
         style={{ transitionDelay: `${0.08 * 3}s` }}
         className={`${styles2['nav_option']} ${
@@ -120,6 +131,7 @@ export default function NavContent(props) {
             blurOn: props.blurOn,
             electronicOn: props.electronicOn,
             contentScrolled: props.contentScrolled,
+            menuOpened: props.menuOpened
           }}
         >
           Co zyskasz
@@ -143,6 +155,7 @@ export default function NavContent(props) {
             blurOn: props.blurOn,
             electronicOn: props.electronicOn,
             contentScrolled: props.contentScrolled,
+            menuOpened: props.menuOpened
           }}
         >
           Organizator
@@ -166,11 +179,12 @@ export default function NavContent(props) {
             blurOn: props.blurOn,
             electronicOn: props.electronicOn,
             contentScrolled: props.contentScrolled,
+            menuOpened: props.menuOpened
           }}
         >
           Regulamin
         </Link>
-      </div>
+      </div> */}
     </div>
   )
 }

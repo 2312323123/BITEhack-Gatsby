@@ -20,13 +20,13 @@ const Layout = ({ pageTitle, children }) => {
   const [newWindowY, setNewWindowY] = useState(window.scrollY)
   const [contentScrolled, setContentScrolled] = useState(false)
 
-  useEffect(() => {
-    window.onscroll = () => {
-      lastWindowY.current = newWindowY
-      setNewWindowY(window.scrollY)
-      console.count('UseEffect entered')
-    }
-  }, [newWindowY, setNewWindowY, lastWindowY.current])
+  // useEffect(() => {
+  //   window.onscroll = () => {
+  //     lastWindowY.current = newWindowY
+  //     setNewWindowY(window.scrollY)
+  //     console.count('UseEffect entered')
+  //   }
+  // }, [newWindowY, setNewWindowY, lastWindowY.current])
 
   return (
     <TurnedOnContext.Provider

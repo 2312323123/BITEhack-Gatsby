@@ -1,22 +1,27 @@
 import * as React from 'react'
-import { useState } from 'react'
+import { useEffect } from 'react'
 import NavContentBigScreen from './NavContentBigScreen'
 import NavButton from './NavButton'
 import NavContent from './NavContent'
 
 export default function NavBar(props) {
-  const [menuOpened, setMenuOpened] = useState(false)
-
   const switchMenu = () => {
-    setMenuOpened(!menuOpened)
+    props.setMenuOpened(!props.menuOpened)
+    console.log('lol')
   }
+
+  useEffect(() => {
+    if (props.menuOpened) {
+      props.setMenuOpened(false)
+    }
+  }, [])
 
   return (
     <>
-      <NavButton click={switchMenu} menuOpened={menuOpened} />
+      <NavButton click={switchMenu} menuOpened={props.menuOpened} />
       <NavContent
         click={switchMenu}
-        menuOpened={menuOpened}
+        menuOpened={props.menuOpened}
         turnedOn={props.turnedOn}
         setTurnedOn={props.setTurnedOn}
         lastWindowY={props.lastWindowY}
@@ -29,6 +34,7 @@ export default function NavBar(props) {
         setContentScrolled={props.setContentScrolled}
       />
       <NavContentBigScreen
+        menuOpened={props.menuOpened}
         turnedOn={props.turnedOn}
         setTurnedOn={props.setTurnedOn}
         lastWindowY={props.lastWindowY}

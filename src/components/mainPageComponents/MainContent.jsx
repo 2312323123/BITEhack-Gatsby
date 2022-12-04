@@ -31,7 +31,6 @@ export default function MainContent(props) {
       <LandingPage />
 
       <div style={{ height: '5vh' }}></div>
-      <div style={{ height: '5vh' }}></div>
 
       <SpaceParagraph
         paragraph="Programowanie to Twoja pasja? Interesujesz się tematyką AI lub
