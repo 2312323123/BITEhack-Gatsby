@@ -13,7 +13,9 @@ export default function LandingPage() {
         alt="BITEhack logo image"
       />
       <div className={styles['header_button_container']}>
-        <div className={styles['header_button']}>ZAPISZ SIĘ</div>
+        <a href="https://forms.gle/ZrsudqNkm7Shvup16" target="_blank">
+          <div className={styles['header_button']}>ZAPISZ SIĘ</div>
+        </a>
       </div>
     </header>
   )

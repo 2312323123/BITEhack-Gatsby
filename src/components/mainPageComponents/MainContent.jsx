@@ -4,13 +4,10 @@ import * as styles from '../../styles/main_content.module.css'
 
 import { useEffect } from 'react'
 import SpaceParagraph from '../commonComponents/SpaceParagraph'
-// import Footer from '../commonComponents/Footer'
 import LandingPage from './LandingPage'
 import Categories from '../commonComponents/Categories'
 import Sponsors from './Sponsors'
 import Footer from '../commonComponents/Footer'
-// import Categories from '../commonComponents/Categories'
-// import Sponsors from './Sponsors'
 
 export default function MainContent(props) {
   const { contentScrolled, setContentScrolled } = props
@@ -35,15 +32,14 @@ export default function MainContent(props) {
       <SpaceParagraph
         paragraph="Programowanie to Twoja pasja? Interesujesz się tematyką AI lub
 robotyką? Jeśli na któreś z tych pytań odpowiedziałeś tak, to 
-koniecznie weź swoich znajomych i zapiszcie się na BITEhacka, 
-dzięki któremu spędzicie wspólnie weekend i rozwiniecie swoje 
-pasje."
+koniecznie weź swoich znajomych i zapiszcie się na BITEhacka. 
+Spędzicie tutaj wspólnie weekend i rozwiniecie swoje pasje."
       />
 
       <div style={{ height: '7.5vh' }}></div>
       <SpaceHeader header="CZAS" />
       <SpaceParagraph
-        paragraph="Twój team będzie miał 24 godziny na opracowanie
+        paragraph="Twój zespół będzie miał 24 godziny na opracowanie
 innowacyjnego rozwiązania i przygotowanie prototypu aplikacji 
 czy też oprogramowania lub stworzenie zwycięskiej wersji 
 robota. Jesteście gotowi na niezapomnianą przygodę? Zapisz 
@@ -55,7 +51,9 @@ się już teraz."
       <SpaceParagraph
         paragraph="W przerwie od kreatywnego myślenia będziecie mieli okazję
 porozmawiać z potencjalnymi pracodawcami. Partner Główny- 
-IBM przeprowadzi specjalnie dla Was Speed recruitment."
+IBM przeprowadzi specjalnie dla Was Speed recruitment. Organizatorzy 
+zadbali również o możliwość oderwania się od pracy, zaczynając od mini-konkursów, 
+aż do możliwośći  pogrania ze znajomymi w strefie relaksu."
       />
 
       <div id="kategorie" style={{ height: '7.5vh' }}></div>
@@ -84,7 +82,7 @@ maksymalnie z 4 osób."
 przedstawienie własnego pomysłu na zadany w temacie 
 problem.
 Wyniki końcowe zespołów oceniać będzie jury składające się z 
-przedstawicieli sponsorów BITEhacka oraz pracowników 
+przedstawicieli partnerów naszego wydarzenia oraz pracowników 
 naukowych Akademii Górniczo-Hutniczej. "
       />
 

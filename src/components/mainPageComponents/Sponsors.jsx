@@ -2,30 +2,30 @@ import * as React from 'react'
 import SpaceHeader from '../commonComponents/SpaceHeader'
 import * as styles from '../../styles/sponsors.module.css'
 
-import Pawel from '../../images/picture1.jpg'
-import Anna from '../../images/picture2.jpg'
-import Marta from '../../images/picture4.jpg'
-import Konrad from '../../images/picture5.jpg'
-import Maciej from '../../images/picture6.jpg'
-import Tomasz from '../../images/picture7.jpg'
+import IBM from '../../images/partners/IBM.svg'
+import aptiv from '../../images/partners/aptiv.svg'
+import avsystem from '../../images/partners/avsystem.svg'
+import Pega from '../../images/partners/Pega.svg'
+import Sabre from '../../images/partners/Sabre.svg'
+import Unit8 from '../../images/partners/Unit8.svg'
 
 export default function Sponsors() {
   return (
     <>
-      <SpaceHeader header="SPONSOR GŁÓWNY" />
+      <SpaceHeader header="PARTNER GŁÓWNY" />
       <img
-        src={Pawel}
+        src={IBM}
         className={styles['main_sponsor_image']}
-        alt="main sponsor"
+        alt="main partner"
       />
       <div style={{ height: '2.5vh' }}></div>
-      <SpaceHeader header="SPONSORZY" />
+      <SpaceHeader header="PARTNERZY" />
       <div className={styles['sponsors']}>
-        <img src={Anna} className={styles['sponsor_image']} alt="sponsor" />
-        <img src={Tomasz} className={styles['sponsor_image']} alt="sponsor" />
-        <img src={Marta} className={styles['sponsor_image']} alt="sponsor" />
-        <img src={Konrad} className={styles['sponsor_image']} alt="sponsor" />
-        <img src={Maciej} className={styles['sponsor_image']} alt="sponsor" />
+        <img src={aptiv} className={styles['sponsor_image']} alt="sponsor" />
+        <img src={avsystem} className={styles['sponsor_image']} alt="sponsor" />
+        <img src={Pega} className={styles['sponsor_image']} alt="sponsor" />
+        <img src={Sabre} className={styles['sponsor_image']} alt="sponsor" />
+        <img src={Unit8} className={styles['sponsor_image']} alt="sponsor" />
       </div>
     </>
   )

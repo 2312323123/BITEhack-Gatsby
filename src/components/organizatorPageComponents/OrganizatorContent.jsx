@@ -9,7 +9,7 @@ import * as styles from '../../styles/organizator_content.module.css'
 
 import Pawel from '../../images/Pawel.jpg'
 import Anna from '../../images/Anna.jpg'
-import Hubert from '../../images/HACKATHON.png'
+import Hubert from '../../images/Hubert.jpg'
 import Marta from '../../images/Marta.jpg'
 import Konrad from '../../images/Konrad.jpg'
 import Maciej from '../../images/Maciej.jpg'
@@ -85,8 +85,8 @@ export default function OrganizatorContent(props) {
           className={`${styles['picture']} ${styles['picture_even']} ${
             inViewport2 ? styles['visible'] : ''
           }`}
-          src={Anna}
-          alt={'Anna Ślęzak'}
+          src={Tomasz}
+          alt={'Tomasz Poręba'}
         />
         <div
           className={`${styles['organizator_info_container']} ${
@@ -94,11 +94,11 @@ export default function OrganizatorContent(props) {
           } ${inViewport2 ? styles['visible'] : ''}`}
         >
           <h2 className={styles['organizator_info_container_name']}>
-            Anna Ślęzak
+            Tomasz Poręba
           </h2>
-          <h2>Koordynator ds. Kontaktu z firmami</h2>
-          <a href="mailto:anna.slezak@best.krakow.pl">
-            <h2>anna.slezak@best.krakow.pl</h2>
+          <h2>Koordynator ds. Zasobów ludzkich</h2>
+          <a href="mailto:tomasz.poreba@best.krakow.pl">
+            <h2>tomasz.poreba@best.krakow.pl</h2>
           </a>
         </div>
 
@@ -107,8 +107,8 @@ export default function OrganizatorContent(props) {
           className={`${styles['picture']} ${styles['picture_odd']} ${
             inViewport3 ? styles['visible'] : ''
           }`}
-          src={Hubert}
-          alt={'Hubert Sujka'}
+          src={Anna}
+          alt={'Anna Ślęzak'}
         />
         <div
           className={`${styles['organizator_info_container']} ${
@@ -116,11 +116,11 @@ export default function OrganizatorContent(props) {
           } ${inViewport3 ? styles['visible'] : ''}`}
         >
           <h2 className={styles['organizator_info_container_name']}>
-            Hubert Sujka
+            Anna Ślęzak
           </h2>
-          <h2>Koordynator ds. Promocji</h2>
-          <a href="mailto:hubert.sujka@best.krakow.pl">
-            <h2>hubert.sujka@best.krakow.pl</h2>
+          <h2>Koordynator ds. Kontaktu z firmami</h2>
+          <a href="mailto:anna.slezak@best.krakow.pl">
+            <h2>anna.slezak@best.krakow.pl</h2>
           </a>
         </div>
 
@@ -151,8 +151,8 @@ export default function OrganizatorContent(props) {
           className={`${styles['picture']} ${styles['picture_odd']} ${
             inViewport5 ? styles['visible'] : ''
           }`}
-          src={Konrad}
-          alt={'Konrad Krzemiński'}
+          src={Hubert}
+          alt={'Hubert Sujka'}
         />
         <div
           className={`${styles['organizator_info_container']} ${
@@ -160,11 +160,11 @@ export default function OrganizatorContent(props) {
           } ${inViewport5 ? styles['visible'] : ''}`}
         >
           <h2 className={styles['organizator_info_container_name']}>
-            Konrad Krzemiński
+            Hubert Sujka
           </h2>
-          <h2>Koordynator ds. Merytoryki</h2>
-          <a href="mailto:konrad.krzeminski@best.krakow.pl">
-            <h2>konrad.krzeminski@best.krakow.pl</h2>
+          <h2>Koordynator ds. Promocji</h2>
+          <a href="mailto:hubert.sujka@best.krakow.pl">
+            <h2>hubert.sujka@best.krakow.pl</h2>
           </a>
         </div>
 
@@ -195,8 +195,8 @@ export default function OrganizatorContent(props) {
           className={`${styles['picture']} ${styles['picture_odd']} ${
             inViewport7 ? styles['visible'] : ''
           }`}
-          src={Tomasz}
-          alt={'Tomasz Poręba'}
+          src={Konrad}
+          alt={'Konrad Krzemiński'}
         />
         <div
           className={`${styles['organizator_info_container']} ${
@@ -204,11 +204,11 @@ export default function OrganizatorContent(props) {
           } ${inViewport7 ? styles['visible'] : ''}`}
         >
           <h2 className={styles['organizator_info_container_name']}>
-            Tomasz Poręba
+            Konrad Krzemiński
           </h2>
-          <h2>Koordynator ds. Zasobów ludzkich</h2>
-          <a href="mailto:tomasz.poreba@best.krakow.pl">
-            <h2>tomasz.poreba@best.krakow.pl</h2>
+          <h2>Koordynator ds. Merytoryki</h2>
+          <a href="mailto:konrad.krzeminski@best.krakow.pl">
+            <h2>konrad.krzeminski@best.krakow.pl</h2>
           </a>
         </div>
       </article>

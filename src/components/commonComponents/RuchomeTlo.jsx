@@ -2,8 +2,6 @@ import * as React from 'react'
 import * as styles from '../../styles/moving_background.module.css'
 import { useEffect, useLayoutEffect, useState } from 'react'
 
-// import { useWindowData } from '../../pages/PagesProvider'
-
 export default function RuchomeTlo(props) {
   const [paralaxUp, setParalaxUp] = useState(true)
   const [contents, setContents] = useState({})

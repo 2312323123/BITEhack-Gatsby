@@ -6,17 +6,14 @@
   .nav {
     --min-height: 4rem;
     min-height: var(--min-height);
-    /* background: yellowgreen; */
 
     z-index: 13;
     position: fixed;
     transition: all 0.4s;
 
-    /* width: min(70rem, 90vw); */
     width: 100%;
     background: lime;
     margin-inline: auto;
-    /* background: red; */
     background: linear-gradient(#0008, transparent);
 
     left: 50%;
@@ -58,7 +55,6 @@
 
   .nav_button_background_container {
     text-align: right;
-    /* background: purple; */
 
     position: relative;
   }
@@ -68,10 +64,6 @@
     text-align: center;
     width: 100%;
     height: calc(var(--min-height) * 0.8);
-    /* clip-path: */
-    /* background: rgba(56, 112, 145, 0.75); */
-
-    /* clip-path: polygon(0 0, 100% 0, 95% 50%, 100% 100%, 0 100%, 5% 50%); */
 
     right: 0;
     top: 50%;
@@ -80,7 +72,6 @@
   }
 
   .nav_button_background > a {
-    /* background: #0808; */
     position: absolute;
     width: 100%;
     left: 0;
@@ -91,8 +82,5 @@
     font-size: clamp(1rem, 2.2vw, 1.8em);
     color: white;
     text-decoration: none;
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
   }
 }

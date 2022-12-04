@@ -135,7 +135,6 @@ table {
 .bars {
   width: 5rem;
   height: 5rem;
-  /* background: navy; */
   position: relative;
   cursor: pointer;
 
@@ -145,12 +144,7 @@ table {
 .bar {
   width: 75%;
   height: 0.9rem;
-  /* border: 0.45rem solid #fff8; */
-  /* background-color: #b63c37; */
-  /* border-radius: 1rem; */
   position: absolute;
-  /* filter: drop-shadow(3px 3px 3px white); */
-  /* box-shadow: 2px 2px 4px white; */
 }
 
 .bar_orange {

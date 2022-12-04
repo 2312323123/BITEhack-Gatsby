@@ -40,7 +40,6 @@ body {
   width: 100vw;
   z-index: 12;
 
-  /* display: grid; */ /* is in .nav-content-container-opened */
   grid-template-columns: 100%;
   grid-template-rows: 2fr repeat(3, minmax(2rem, 1fr)) 4.5fr;
   grid-auto-flow: column;
@@ -52,7 +51,6 @@ body {
   background-image: linear-gradient(to right, #eed2bc 50%, transparent 50%);
 
   transition: background-position 1s;
-  /* animation: gradient 2s ease infinite; */
 }
 .nav_content_container_slow_transition {
   transition: background-position 1.5s;
@@ -93,7 +91,6 @@ body {
     background-position: 0 100%, 0 0;
   }
   50% {
-    /* background-position: calc(200%/3) 0; */
     background-position: 100% 0, 100% 100%;
   }
   100% {

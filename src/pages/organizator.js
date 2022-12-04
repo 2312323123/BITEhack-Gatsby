@@ -2,9 +2,6 @@ import * as React from 'react'
 import { useState, useRef, useEffect } from 'react'
 import NavBar from '../components/commonComponents/NavBar'
 import RuchomeTlo from '../components/commonComponents/RuchomeTlo'
-import MainFrame from '../components/commonComponents/MainFrame'
-import BlurScreen from '../components/mainPageComponents/BlurScreen'
-import ElectronicScreen from '../components/mainPageComponents/ElectronicScreen'
 import OrganizatorContent from '../components/organizatorPageComponents/OrganizatorContent'
 import PlanetaTlo from '../components/commonComponents/PlanetaTlo'
 
@@ -40,7 +37,6 @@ export default ({ location }) => {
       window.history.replaceState({}, document.title)
     }
   }, [])
-  // console.log('turnedOn: ' + turnedOn.toString())
 
   useEffect(() => {
     window.onscroll = () => {
@@ -69,21 +65,10 @@ export default ({ location }) => {
 
       <RuchomeTlo newWindowY={newWindowY} lastWindowY={lastWindowY} />
       <PlanetaTlo newWindowY={newWindowY} />
-      {/* <MainFrame
-        turnedOn={turnedOn}
-        setTurnedOn={setTurnedOn}
-        lastWindowY={lastWindowY}
-        newWindowY={newWindowY}
-      /> */}
-      {/* <BlurScreen blurOn={blurOn} setBlurOn={setBlurOn} /> */}
       <OrganizatorContent
         contentScrolled={contentScrolled}
         setContentScrolled={setContentScrolled}
       />
-      {/* <ElectronicScreen
-        electronicOn={electronicOn}
-        setElectronicOn={setElectronicOn}
-      /> */}
     </>
   )
 }

@@ -1,12 +1,10 @@
-import React, { useLayoutEffect, useRef, useState } from 'react'
-import planeta_tlo from '../../images/HACKATHON.png'
+import React, { useLayoutEffect, useState } from 'react'
 import * as styles from '../../styles/planeta_tlo.module.css'
 
 function PlanetaTlo(props) {
   const { newWindowY } = props
 
   const [maxScroll, setMaxScroll] = useState()
-  // console.log(newWindowY)
 
   useLayoutEffect(() => {
     const body = document.body,
@@ -45,7 +43,6 @@ function PlanetaTlo(props) {
         }}
         className={styles['planeta_tlo']}
       ></div>
-      {/* <div className={styles['hehe']}></div> */}
     </>
   )
 }

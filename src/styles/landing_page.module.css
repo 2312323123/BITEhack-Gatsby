@@ -15,7 +15,6 @@
 }
 
 .BITEhack_logo {
-  /* max-height: 100%; */
   width: clamp(10rem, 80%, 30rem);
   grid-row-start: 3;
 }

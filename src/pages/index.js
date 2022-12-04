@@ -2,9 +2,6 @@ import * as React from 'react'
 import { useState, useRef, useEffect } from 'react'
 import NavBar from '../components/commonComponents/NavBar'
 import RuchomeTlo from '../components/commonComponents/RuchomeTlo'
-import MainFrame from '../components/commonComponents/MainFrame'
-import BlurScreen from '../components/mainPageComponents/BlurScreen'
-import ElectronicScreen from '../components/mainPageComponents/ElectronicScreen'
 import MainContent from '../components/mainPageComponents/MainContent'
 import PlanetaTlo from '../components/commonComponents/PlanetaTlo'
 
@@ -74,21 +71,10 @@ export default ({ location }) => {
 
       <RuchomeTlo newWindowY={newWindowY} lastWindowY={lastWindowY} />
       <PlanetaTlo newWindowY={newWindowY} />
-      {/* <MainFrame
-        turnedOn={turnedOn}
-        setTurnedOn={setTurnedOn}
-        lastWindowY={lastWindowY}
-        newWindowY={newWindowY}
-      /> */}
-      {/* <BlurScreen blurOn={blurOn} setBlurOn={setBlurOn} /> */}
       <MainContent
         contentScrolled={contentScrolled}
         setContentScrolled={setContentScrolled}
       />
-      {/* <ElectronicScreen
-        electronicOn={electronicOn}
-        setElectronicOn={setElectronicOn}
-      /> */}
     </>
   )
 }
