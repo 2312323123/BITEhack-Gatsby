@@ -7,7 +7,6 @@ import NavContent from './NavContent'
 export default function NavBar(props) {
   const switchMenu = () => {
     props.setMenuOpened(!props.menuOpened)
-    console.log('lol')
   }
 
   useEffect(() => {
@@ -32,6 +31,7 @@ export default function NavBar(props) {
         setElectronicOn={props.setElectronicOn}
         contentScrolled={props.contentScrolled}
         setContentScrolled={props.setContentScrolled}
+        currentPage={props.currentPage}
       />
       <NavContentBigScreen
         menuOpened={props.menuOpened}

@@ -34,6 +34,7 @@ const Regulamin = ({ location }) => {
   const [menuOpened, setMenuOpened] = useState(
     location.state ? location.state.menuOpened : false
   )
+  const [currentPage, setCurrentPage] = useState('regulamin')
 
   useEffect(() => {
     if (
@@ -72,6 +73,7 @@ const Regulamin = ({ location }) => {
         setContentScrolled={setContentScrolled}
         menuOpened={menuOpened}
         setMenuOpened={setMenuOpened}
+        currentPage={currentPage}
       />
 
       <RuchomeTlo newWindowY={newWindowY} lastWindowY={lastWindowY} />

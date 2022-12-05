@@ -12,8 +12,10 @@ export default function NavContent(props) {
     textDecoration: 'none',
   }
 
-  const linkClick = () => {
-    props.click()
+  const linkClick = (currentPage) => {
+    if (currentPage === props.currentPage) {
+      props.click()
+    }
   }
 
   return (
@@ -29,7 +31,7 @@ export default function NavContent(props) {
       }`}
     >
       <div
-        onClick={() => linkClick()}
+        onClick={() => linkClick('regulamin')}
         style={{ transitionDelay: `${0.08 * 2}s` }}
         className={`${styles2['nav_option']} ${
           props.menuOpened ? '' : styles2['tak']
@@ -54,7 +56,7 @@ export default function NavContent(props) {
       </div>
 
       <div
-        onClick={() => linkClick()}
+        onClick={() => linkClick('index')}
         style={{ transitionDelay: `${0.08 * 3}s` }}
         className={`${styles2['nav_option']} ${
           props.menuOpened ? '' : styles2['tak']
@@ -79,7 +81,7 @@ export default function NavContent(props) {
       </div>
 
       <div
-        onClick={() => linkClick()}
+        onClick={() => linkClick('organizator')}
         style={{ transitionDelay: `${0.08 * 4}s` }}
         className={`${styles2['nav_option']} ${
           props.menuOpened ? '' : styles2['tak']
