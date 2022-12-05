@@ -12,11 +12,13 @@
 .HACKATHON {
   max-width: min(60rem, 90vw);
   grid-row-start: 2;
+  max-height: 100%;
 }
 
 .BITEhack_logo {
-  width: clamp(10rem, 80%, 30rem);
+  max-width: clamp(10rem, 80%, 30rem);
   grid-row-start: 3;
+  max-height: 100%;
 }
 
 .header_button_container {
