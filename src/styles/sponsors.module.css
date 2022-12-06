@@ -1,11 +1,12 @@
-.main_sponsor_image {
+.main_partner_container {
   max-width: min(30rem, 90vw);
   margin: 0 auto;
+  display: block;
+}
 
+.main_sponsor_image {
   background: white;
   object-fit: contain;
-
-  display: block;
 
   position: relative;
 

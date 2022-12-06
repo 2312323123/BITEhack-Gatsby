@@ -1,33 +1,33 @@
-import * as React from 'react'
-import SpaceHeader from '../commonComponents/SpaceHeader'
-import * as styles from '../../styles/main_content.module.css'
+import * as React from "react";
+import SpaceHeader from "../commonComponents/SpaceHeader";
+import * as styles from "../../styles/main_content.module.css";
 
-import { useEffect } from 'react'
-import SpaceParagraph from '../commonComponents/SpaceParagraph'
-import LandingPage from './LandingPage'
-import Categories from '../commonComponents/Categories'
-import Sponsors from './Sponsors'
-import Footer from '../commonComponents/Footer'
+import { useEffect } from "react";
+import SpaceParagraph from "../commonComponents/SpaceParagraph";
+import LandingPage from "./LandingPage";
+import Categories from "../commonComponents/Categories";
+import Sponsors from "./Sponsors";
+import Footer from "../commonComponents/Footer";
 
 export default function MainContent(props) {
-  const { contentScrolled, setContentScrolled } = props
+  const { contentScrolled, setContentScrolled } = props;
 
   useEffect(() => {
     if (!contentScrolled) {
-      setContentScrolled(true)
+      setContentScrolled(true);
     }
-  }, [contentScrolled, setContentScrolled])
+  }, [contentScrolled, setContentScrolled]);
 
   return (
     <main
       id="opis"
-      className={`${styles['main_content']} ${
-        contentScrolled ? styles['content_scrolled'] : ''
+      className={`${styles["main_content"]} ${
+        contentScrolled ? styles["content_scrolled"] : ""
       }`}
     >
       <LandingPage />
 
-      <div style={{ height: '5vh' }}></div>
+      <div style={{ height: "5vh" }}></div>
 
       <SpaceParagraph
         paragraph="Programowanie to Twoja pasja? Interesujesz się tematyką AI lub
@@ -36,7 +36,14 @@ koniecznie weź swoich znajomych i zapiszcie się na BITEhacka.
 Spędzicie tutaj wspólnie weekend i rozwiniecie swoje pasje."
       />
 
-      <div style={{ height: '7.5vh' }}></div>
+      <div style={{ height: "7.5vh" }}></div>
+      <SpaceHeader header="GDZIE I KIEDY?" />
+      <SpaceParagraph
+        paragraph="Wydarzenie odbędzie się w klubie Studio 
+      na terenie kampusu AGH w dniach 14-15 stycznia 2023."
+      />
+
+      <div style={{ height: "7.5vh" }}></div>
       <SpaceHeader header="CZAS" />
       <SpaceParagraph
         paragraph="Twój zespół będzie miał 24 godziny na opracowanie
@@ -46,21 +53,21 @@ robota. Jesteście gotowi na niezapomnianą przygodę? Zapisz
 się już teraz."
       />
 
-      <div style={{ height: '7.5vh' }}></div>
+      <div style={{ height: "7.5vh" }}></div>
       <SpaceHeader header="ATRAKCJE" />
       <SpaceParagraph
         paragraph="W przerwie od kreatywnego myślenia będziecie mieli okazję
 porozmawiać z potencjalnymi pracodawcami. Partner Główny- 
 IBM przeprowadzi specjalnie dla Was Speed recruitment. Organizatorzy 
-zadbali również o możliwość oderwania się od pracy, zaczynając od mini-konkursów, 
+zadbali również o możliwość oderwania się od pracy, zaczynając od mini&#8209;konkursów, 
 aż do możliwośći  pogrania ze znajomymi w strefie relaksu."
       />
 
-      <div id="kategorie" style={{ height: '7.5vh' }}></div>
+      <div id="kategorie" style={{ height: "7.5vh" }}></div>
 
       <Categories />
 
-      <div id="oprojekcie" style={{ height: '7.5vh' }}></div>
+      <div id="oprojekcie" style={{ height: "7.5vh" }}></div>
       <SpaceHeader header="O PROJEKCIE" />
       <SpaceHeader header="Co to tak naprawdę jest BITEhack?" />
       <SpaceParagraph
@@ -75,7 +82,7 @@ czasie nie przekraczającym doby. Zespół może się składać
 maksymalnie z 4 osób."
       />
 
-      <div style={{ height: '7.5vh' }}></div>
+      <div style={{ height: "7.5vh" }}></div>
       <SpaceHeader header="PRZEBIEG WYDARZENIA" />
       <SpaceParagraph
         paragraph="Uczestnicy hackathonu mają 24 godziny na zaproponowanie i
@@ -86,7 +93,7 @@ przedstawicieli partnerów naszego wydarzenia oraz pracowników
 naukowych Akademii Górniczo-Hutniczej. "
       />
 
-      <div id="cozyskasz" style={{ height: '7.5vh' }}></div>
+      <div id="cozyskasz" style={{ height: "7.5vh" }}></div>
       <SpaceHeader header="CZY WARTO?" />
       <SpaceParagraph
         paragraph="Dzięki zapisom na wydarzenie możecie spędzić wspólnie czas ze
@@ -100,11 +107,11 @@ poprowadzonym przez naszego Partnera Głównego. Kolejna
 taka okazja dopiero za rok!"
       />
 
-      <div id="sponsorzy" style={{ height: '5vh' }}></div>
+      <div id="sponsorzy" style={{ height: "5vh" }}></div>
 
       <Sponsors />
 
       <Footer />
     </main>
-  )
+  );
 }
