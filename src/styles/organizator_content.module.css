@@ -6,19 +6,29 @@
 }
 
 .picture {
-  width: min(70%, 30rem);
+  border-radius: 1rem;
+  width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
   position: relative;
 
   display: block;
-  margin-inline: auto;
+}
+
+.picture_container {
+  width: min(100%, 31.5rem);
+  background-color: #eed2bc;
+  border: 0.75rem solid #eed2bc;
+  border-radius: 0.2rem;
 }
 
 .organizator_info_container {
   width: min(70%, 30rem);
   margin-inline: auto;
   margin-bottom: 1rem;
+  position: relative;
+
+  margin-inline: auto;
 }
 
 .picture_odd {

@@ -13,14 +13,18 @@ function OrganizatorInfo({
 }) {
   return (
     <>
-      <img
-        ref={theRef}
-        className={`${styles["picture"]} ${
+      <div
+        className={`${styles["picture_container"]} ${
           isOdd ? styles["picture_odd"] : styles["picture_even"]
         } ${inViewport ? styles["visible"] : ""}`}
-        src={src}
-        alt={name}
-      />
+      >
+        <img
+          ref={theRef}
+          className={`${styles["picture"]}`}
+          src={src}
+          alt={name}
+        />
+      </div>
       <div
         className={`${styles["organizator_info_container"]} ${
           isOdd
