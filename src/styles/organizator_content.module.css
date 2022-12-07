@@ -16,10 +16,11 @@
 }
 
 .picture_container {
-  width: min(100%, 31.5rem);
+  width: min(70%, 31.5rem);
+  margin-inline: auto;
   background-color: #eed2bc;
-  border: 0.75rem solid #eed2bc;
-  border-radius: 0.2rem;
+  border: 0.5rem solid #eed2bc;
+  border-radius: 0.4rem;
 }
 
 .organizator_info_container {
@@ -88,6 +89,11 @@
 }
 
 @media (min-width: 65rem) {
+  .picture_container {
+    width: min(100%, 31.5rem);
+    border-width: 0.75rem;
+  }
+
   .people {
     margin-top: 4rem;
     display: grid;
