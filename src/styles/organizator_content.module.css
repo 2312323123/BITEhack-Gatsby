@@ -40,8 +40,8 @@
 }
 
 .organizator_info_container h2 {
-  font-family: 'Montserrat', Verdana;
-  font-size: clamp(0.8rem, 3.5vw, 1.4rem);
+  font-family: "Montserrat", Verdana;
+  font-size: clamp(0.8rem, 1.6vw, 1.3rem);
   font-weight: bold;
   line-height: 130%;
 
@@ -49,6 +49,10 @@
 }
 .organizator_info_container .organizator_info_container_name {
   font-size: clamp(1.2rem, 4vw, 2.1rem);
+}
+
+.organizator_info_container a {
+  color: #bccbd1;
 }
 
 .organizator_info_container_odd {
