@@ -1,16 +1,16 @@
-import * as React from 'react'
-import * as styles from '../../styles/regulamin_content.module.css'
-import RegulaminSectionHeader from './RegulaminSectionHeader'
-import FooterRegulamin from '../commonComponents/FooterRegulamin'
-import SpaceHeader from '../commonComponents/SpaceHeader'
+import * as React from "react";
+import * as styles from "../../styles/regulamin_content.module.css";
+import RegulaminSectionHeader from "./RegulaminSectionHeader";
+import FooterRegulamin from "../commonComponents/FooterRegulamin";
+import SpaceHeader from "../commonComponents/SpaceHeader";
 
 export default function RegulaminContent() {
   return (
-    <main className={styles['regulamin_background']}>
+    <main className={styles["regulamin_background"]}>
       <SpaceHeader header="REGULAMIN" />
       <RegulaminSectionHeader header="§1" />
       <RegulaminSectionHeader header="POSTANOWIENIA OGÓLNE" />
-      <ol className={styles['regulamin_list']}>
+      <ol className={styles["regulamin_list"]}>
         <li>
           Niniejszy regulamin BITEhack – BEST IT Extended Hackathon (zwany dalej
           “Regulaminem”) określa zasady i warunki, na których odbywa się BEST IT
@@ -25,7 +25,7 @@ export default function RegulaminContent() {
 
       <RegulaminSectionHeader header="§2" />
       <RegulaminSectionHeader header="TERMIN I MIEJSCE" />
-      <ol className={styles['regulamin_list']}>
+      <ol className={styles["regulamin_list"]}>
         <li>
           Hackathon odbywa się w dniach 14-15 stycznia 2023 w budynku Klubu
           Studio, w Krakowie przy ul. Witolda Budryka 4.
@@ -34,11 +34,11 @@ export default function RegulaminContent() {
 
       <RegulaminSectionHeader header="§3" />
       <RegulaminSectionHeader header="DEFINICJE" />
-      <p className={styles['regulamin_clarification']}>
+      <p className={styles["regulamin_clarification"]}>
         Na potrzeby niniejszego regulaminu poniższym pojęciom przypisuje się
         następujące znaczenie:
       </p>
-      <ol className={styles['regulamin_list']}>
+      <ol className={styles["regulamin_list"]}>
         <li>
           Uczestnik – osoba fizyczna posiadająca zdolność do czynności prawnych,
           która w dniu rozpoczęcia Hackathonu
@@ -51,7 +51,7 @@ export default function RegulaminContent() {
 
       <RegulaminSectionHeader header="§4" />
       <RegulaminSectionHeader header="WARUNKI UCZESTNICTWA" />
-      <ol className={styles['regulamin_list']}>
+      <ol className={styles["regulamin_list"]}>
         <li>Udział w Hackathonie jest dobrowolny, bezpłatny i otwarty.</li>
         <li>
           Każda Drużyna może wziąć udział w jednej z trzech kategorii:
@@ -68,12 +68,11 @@ export default function RegulaminContent() {
           w celu zweryfikowania statusu studenta.
         </li>
         <li>
-          Zgłoszenia Drużyny dokonuje Uczestnik, wyznaczony do tego przez
-          pozostałych Uczestników, wchodzących w skład Drużyny. Zgłoszenie
-          Drużyny jest jednoznaczne z zaakceptowaniem niniejszego Regulaminu
-          przez wszystkich Uczestników wchodzących w skład Drużyny, a także
-          wyrażeniem przez nich zgody na przetwarzanie danych osobowych przez
-          Organizatora w celach związanych z organizacją Hackathonu, a także na
+          W celu zgłoszenia Drużyny do wzięcia udziału w Hackathonie, każdy jej
+          członek jest zobowiązany wypełnić formularz zgłoszeniowy. Zgłoszenie
+          Drużyny jest jednoznaczne z zaakceptowaniem niniejszego Regulaminu, a
+          także wyrażeniem zgody na przetwarzanie danych osobowych przez
+          Organizatora w celach związanych z organizacją Hackathonu oraz na
           otrzymywanie korespondencji mailowej od Organizatora w celach
           związanych z organizacją Hackathonu.
         </li>
@@ -150,7 +149,7 @@ export default function RegulaminContent() {
 
       <RegulaminSectionHeader header="§5" />
       <RegulaminSectionHeader header="PRZEBIEG HACKATHONU" />
-      <ol className={styles['regulamin_list']}>
+      <ol className={styles["regulamin_list"]}>
         <li>
           Hackathon będzie przebiegał według harmonogramu udostępnionego
           Uczestnikom na początku wydarzenia. Organizator zastrzega sobie prawo
@@ -172,7 +171,7 @@ export default function RegulaminContent() {
 
       <RegulaminSectionHeader header="§6" />
       <RegulaminSectionHeader header="ZADANIA" />
-      <ol className={styles['regulamin_list']}>
+      <ol className={styles["regulamin_list"]}>
         <li>
           W ramach Hackathonu przeprowadzone zostaną niezależne od siebie
           konkursy, których przedmiotem będzie opracowanie rozwiązań podanych
@@ -204,7 +203,7 @@ export default function RegulaminContent() {
 
       <RegulaminSectionHeader header="§7" />
       <RegulaminSectionHeader header="JURY I WYBÓR ZWYCIĘZCÓW" />
-      <ol className={styles['regulamin_list']}>
+      <ol className={styles["regulamin_list"]}>
         <li>
           Oceny i weryfikacji zadań dokonuje Jury wyznaczone przez Organizatora.
         </li>
@@ -212,7 +211,7 @@ export default function RegulaminContent() {
         <li>
           W kategorii “Klasycznej” wyróżniono następujące kryteria oceniania
           wraz z maksymalną liczbą punktów do uzyskania:
-          <ol className={styles['regulamin_list_2nd_level']}>
+          <ol className={styles["regulamin_list_2nd_level"]}>
             <li>
               Innowacyjność i pomysłowość zaproponowanych rozwiązań – 15 pkt.
             </li>
@@ -229,7 +228,7 @@ export default function RegulaminContent() {
         <li>
           W kategorii „Robotycznej” wyróżniono następujące kryteria oceniania
           wraz z maksymalną liczbą punktów do uzyskania:
-          <ol className={styles['regulamin_list_2nd_level']}>
+          <ol className={styles["regulamin_list_2nd_level"]}>
             <li>
               Innowacyjność i pomysłowość zaproponowanych rozwiązań – 25 pkt.
             </li>
@@ -245,11 +244,11 @@ export default function RegulaminContent() {
         <li>
           W kategorii “AI” wyróżniono następujące kryteria oceniania wraz z
           maksymalną liczbą punktów do uzyskania:
-          <ol className={styles['regulamin_list_2nd_level']}>
+          <ol className={styles["regulamin_list_2nd_level"]}>
             <li>Innowacyjność i pomysłowość rozwiązania - 25 pkt.</li>
             <li>
               Realizacja projektu - 60 pkt, w szczególności:
-              <ol className={styles['regulamin_list_3rd_level']}>
+              <ol className={styles["regulamin_list_3rd_level"]}>
                 <li>
                   Podstawy teoretyczne, zrozumienie i interpretacja wyników,
                   uzasadnienie wykorzystanych technik - 20 pkt.
@@ -288,7 +287,7 @@ export default function RegulaminContent() {
 
       <RegulaminSectionHeader header="§8" />
       <RegulaminSectionHeader header="WŁASNOŚĆ INTELEKTUALNA" />
-      <ol className={styles['regulamin_list']}>
+      <ol className={styles["regulamin_list"]}>
         <li>
           Właścicielami wszelkich praw własności intelektualnej prac, utworów i
           rozwiązań stworzonych w czasie trwania Hackathonu są ich autorzy.
@@ -307,7 +306,7 @@ export default function RegulaminContent() {
           Obowiązuje kategoryczny zakaz umieszczania w pracach konkursowych
           treści niezgodnych z prawem, kontrowersyjnych oraz innych, które
           mogłyby zostać źle przyjęte, w szczególności:
-          <ol className={styles['regulamin_list_2nd_level']}>
+          <ol className={styles["regulamin_list_2nd_level"]}>
             <li>wulgarnych,</li>
             <li>
               wzywających do nienawiści na tle rasowym, płciowym, etnicznym,
@@ -337,7 +336,7 @@ export default function RegulaminContent() {
 
       <RegulaminSectionHeader header="§9" />
       <RegulaminSectionHeader header="ZASADY PORZĄDKOWE" />
-      <ol className={styles['regulamin_list']}>
+      <ol className={styles["regulamin_list"]}>
         <li>
           Uczestnicy na Hackathonie są obowiązani do poszanowania praw i
           godności osobistej innych Uczestników. Uczestników obowiązuje
@@ -398,7 +397,7 @@ export default function RegulaminContent() {
 
       <RegulaminSectionHeader header="§10" />
       <RegulaminSectionHeader header="POSTANOWIENIA KOŃCOWE" />
-      <ol className={styles['regulamin_list']}>
+      <ol className={styles["regulamin_list"]}>
         <li>Niniejszy Regulamin wchodzi w życie z dniem 07.01.2023r.</li>
         <li>
           Uczestnicy zobowiązani są do przestrzegania postanowień Regulaminu.
@@ -441,18 +440,18 @@ export default function RegulaminContent() {
           niniejszego Regulaminu.
         </li>
       </ol>
-      <div style={{ height: '5vh' }}></div>
+      <div style={{ height: "5vh" }}></div>
       <a
         rel="noopener noreferrer"
         target="_blank"
         href="/rodo.pdf"
         style={{
-          textAlign: 'center',
-          display: 'block',
-          color: 'white',
+          textAlign: "center",
+          display: "block",
+          color: "white",
           fontFamily: '"Open Sans", sans-serif',
-          fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
-          lineHeight: '1.35',
+          fontSize: "clamp(1rem, 2.5vw, 1.4rem)",
+          lineHeight: "1.35",
         }}
       >
         Informacje o danych osobowych
@@ -462,12 +461,12 @@ export default function RegulaminContent() {
         target="_blank"
         href="/rodoCV.pdf"
         style={{
-          textAlign: 'center',
-          display: 'block',
-          color: 'white',
+          textAlign: "center",
+          display: "block",
+          color: "white",
           fontFamily: '"Open Sans", sans-serif',
-          fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
-          lineHeight: '1.35',
+          fontSize: "clamp(1rem, 2.5vw, 1.4rem)",
+          lineHeight: "1.35",
         }}
       >
         Informacje o danych osobowych CV
@@ -477,17 +476,17 @@ export default function RegulaminContent() {
         target="_blank"
         href="/Regulamin-BEST-IT-Extended-Hackathon-BITEhack.pdf"
         style={{
-          textAlign: 'center',
-          display: 'block',
-          color: 'white',
+          textAlign: "center",
+          display: "block",
+          color: "white",
           fontFamily: '"Open Sans", sans-serif',
-          fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
-          lineHeight: '1.35',
+          fontSize: "clamp(1rem, 2.5vw, 1.4rem)",
+          lineHeight: "1.35",
         }}
       >
         Wersja PDF regulaminu
       </a>
       <FooterRegulamin />
     </main>
-  )
+  );
 }
