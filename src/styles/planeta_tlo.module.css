@@ -1,0 +1,26 @@
+.planeta_tlo {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/tlo_tel_dol.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.mala_planeta_tlo {
+  display: none;
+  width: 20vh;
+  height: 100vh;
+  background-size: contain;
+  background-image: url('../images/Planeta1.png');
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 70rem) {
+  .mala_planeta_tlo {
+    display: block;
+  }
+
+  .planeta_tlo {
+    background-image: url('../images/tlo_dol.png');
+  }
+}

@@ -1,6 +1,6 @@
 .people {
   margin-top: 2rem;
-  color: #888;
+  color: white;
   max-width: min(70rem, 90vw);
   margin: auto;
 }
@@ -10,10 +10,6 @@
   aspect-ratio: 1;
   object-fit: cover;
   position: relative;
-
-  /* electronic screen is 10, navbar 12 (.nav-content-container), navbutton 13 */
-  /* z-index: 11; */
-  filter: brightness(40%);
 
   display: block;
   margin-inline: auto;
@@ -26,8 +22,6 @@
 }
 
 .picture_odd {
-  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
-
   transform: translateX(2rem);
   opacity: 0;
   transition: transform 0.6s, opacity 0.6s ease-in;
@@ -37,8 +31,6 @@
 }
 
 .picture_even {
-  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
-
   transform: translateX(-2rem);
   opacity: 0;
   transition: transform 0.6s, opacity 0.6s ease-in;
@@ -48,8 +40,9 @@
 }
 
 .organizator_info_container h2 {
-  font-family: 'Open Sans', Verdana;
-  font-size: clamp(0.8rem, 3.5vw, 1.4rem);
+  font-family: "Montserrat", Verdana;
+  font-size: clamp(0.8rem, 1.6vw, 1.3rem);
+  font-weight: bold;
   line-height: 130%;
 
   margin-left: 0.5rem;
@@ -58,22 +51,26 @@
   font-size: clamp(1.2rem, 4vw, 2.1rem);
 }
 
+.organizator_info_container a {
+  color: #bccbd1;
+}
+
 .organizator_info_container_odd {
-  transform: rotate(-3deg) translateX(2rem);
+  transform: translateX(2rem);
   opacity: 0;
   transition: transform 0.6s, opacity 0.6s ease-in;
 }
 .organizator_info_container_odd.visible {
-  transform: rotate(-3deg);
+  transform: translateX(0);
 }
 
 .organizator_info_container_even {
-  transform: rotate(3deg) translateX(-2rem);
+  transform: translateX(-2rem);
   opacity: 0;
   transition: transform 0.6s, opacity 0.6s ease-in;
 }
 .organizator_info_container_even.visible {
-  transform: rotate(3deg);
+  transform: translateX(0);
 }
 
 .visible {
@@ -96,15 +93,10 @@
 
   .picture_odd {
     grid-column: 2;
-    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
-    /* clip-path: none; */
   }
 
   .picture_even {
     grid-column: 4;
-    clip-path: none;
-    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
-    /* clip-path: none; */
 
     justify-self: right;
   }
@@ -115,24 +107,22 @@
 
   .organizator_info_container_odd {
     grid-column: 2 / span 2;
-    transform: rotate(3deg) translateX(2rem);
-    /* transform: none; */
+    transform: translateX(2rem);
     text-align: left;
   }
   .organizator_info_container_odd.visible {
-    transform: rotate(3deg);
+    transform: translateX(0);
   }
 
   .organizator_info_container_even {
     grid-column: 3 / span 2;
-    transform: rotate(3deg) translateX(-2rem);
-    /* transform: none; */
+    transform: translateX(-2rem);
     text-align: right;
 
     justify-self: right;
   }
   .organizator_info_container_even.visible {
-    transform: rotate(3deg);
+    transform: translateX(0);
   }
 
   .organizator_info_container h2 {

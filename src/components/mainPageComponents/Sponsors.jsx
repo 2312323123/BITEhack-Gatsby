@@ -1,32 +1,55 @@
-import * as React from 'react'
-import SpaceHeader from '../commonComponents/SpaceHeader'
-import * as styles from '../../styles/sponsors.module.css'
+import * as React from "react";
+import SpaceHeader from "../commonComponents/SpaceHeader";
+import * as styles from "../../styles/sponsors.module.css";
 
-import Pawel from '../../images/picture1.jpg'
-import Anna from '../../images/picture2.jpg'
-import Marta from '../../images/picture4.jpg'
-import Konrad from '../../images/picture5.jpg'
-import Maciej from '../../images/picture6.jpg'
-import Tomasz from '../../images/picture7.jpg'
+import IBM from "../../images/partners/IBM.svg";
+import aptiv from "../../images/partners/aptiv.svg";
+import avsystem from "../../images/partners/avsystem.svg";
+import Pega from "../../images/partners/Pega.svg";
+import Sabre from "../../images/partners/Sabre.svg";
+import Unit8 from "../../images/partners/Unit8.svg";
 
 export default function Sponsors() {
   return (
     <>
-      <SpaceHeader header="SPONSOR GŁÓWNY" />
-      <img
-        src={Pawel}
-        className={styles['main_sponsor_image']}
-        alt="main sponsor"
-      />
-      <div style={{ height: '2.5vh' }}></div>
-      <SpaceHeader header="SPONSORZY" />
-      <div className={styles['sponsors']}>
-        <img src={Anna} className={styles['sponsor_image']} alt="sponsor" />
-        <img src={Tomasz} className={styles['sponsor_image']} alt="sponsor" />
-        <img src={Marta} className={styles['sponsor_image']} alt="sponsor" />
-        <img src={Konrad} className={styles['sponsor_image']} alt="sponsor" />
-        <img src={Maciej} className={styles['sponsor_image']} alt="sponsor" />
+      <SpaceHeader header="PARTNER GŁÓWNY" />
+      <a
+        href="https://www.ibm.com/pl-pl"
+        target="_blank"
+        className={styles["main_partner_container"]}
+      >
+        <img
+          src={IBM}
+          className={styles["main_sponsor_image"]}
+          alt="main partner"
+        />
+      </a>
+      <div style={{ height: "2.5vh" }}></div>
+      <SpaceHeader header="PARTNERZY" />
+      <div className={styles["sponsors"]}>
+        <a href="https://www.aptiv.com/pl/aptiv-w-polsce" target="_blank">
+          <img src={aptiv} className={styles["sponsor_image"]} alt="sponsor" />
+        </a>
+        <a href="https://www.avsystem.com/" target="_blank">
+          <img
+            src={avsystem}
+            className={styles["sponsor_image"]}
+            alt="sponsor"
+          />
+        </a>
+        <a
+          href="https://www.pega.com/lang/pl/about/careers/pega-poland"
+          target="_blank"
+        >
+          <img src={Pega} className={styles["sponsor_image"]} alt="sponsor" />
+        </a>
+        <a href="https://www.sabre.com/locations/poland/" target="_blank">
+          <img src={Sabre} className={styles["sponsor_image"]} alt="sponsor" />
+        </a>
+        <a href="https://unit8.com/" target="_blank">
+          <img src={Unit8} className={styles["sponsor_image"]} alt="sponsor" />
+        </a>
       </div>
     </>
-  )
+  );
 }

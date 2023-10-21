@@ -1,18 +1,16 @@
-.main_sponsor_image {
+.main_partner_container {
   max-width: min(30rem, 90vw);
   margin: 0 auto;
+  display: block;
+}
 
+.main_sponsor_image {
   background: white;
   object-fit: contain;
 
-  display: block;
-
   position: relative;
-  /* z-index: 11; */
 
   border-radius: 1rem;
-
-  filter: brightness(40%);
 }
 
 .sponsors {
@@ -30,13 +28,10 @@
   display: block;
 
   position: relative;
-  /* z-index: 11; */
 
   border-radius: 1rem;
 
   margin-bottom: 1rem;
-
-  filter: brightness(40%);
 }
 
 @media (min-width: 40rem) {

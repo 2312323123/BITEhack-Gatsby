@@ -1,13 +1,13 @@
 import * as React from 'react'
 import * as styles from '../../styles/regulamin_content.module.css'
-import RegulaminHeader from './RegulaminHeader'
 import RegulaminSectionHeader from './RegulaminSectionHeader'
 import FooterRegulamin from '../commonComponents/FooterRegulamin'
+import SpaceHeader from '../commonComponents/SpaceHeader'
 
 export default function RegulaminContent() {
   return (
     <main className={styles['regulamin_background']}>
-      <RegulaminHeader header="REGULAMIN" />
+      <SpaceHeader header="REGULAMIN" />
       <RegulaminSectionHeader header="§1" />
       <RegulaminSectionHeader header="POSTANOWIENIA OGÓLNE" />
       <ol className={styles['regulamin_list']}>
@@ -41,10 +41,10 @@ export default function RegulaminContent() {
       <ol className={styles['regulamin_list']}>
         <li>
           Uczestnik – osoba fizyczna posiadająca zdolność do czynności prawnych,
-          która w dniu rozpoczęcia Hackathonu (tj. 14 stycznia 2023) nie
-          ukończyła 26. roku życia oraz posiada status studenta. Uczestnik nie
-          musi być studentem Akademii Górniczo-Hutniczej im. Stanisława Staszica
-          w Krakowie.
+          która w dniu rozpoczęcia Hackathonu
+          (tj.&nbsp;14&nbsp;stycznia&nbsp;2023) nie ukończyła 26. roku życia
+          oraz posiada status studenta. Uczestnik nie musi być studentem
+          Akademii Górniczo-Hutniczej im. Stanisława Staszica w Krakowie.
         </li>
         <li>Drużyna – zespół złożony z 2-4 Uczestników.</li>
       </ol>
@@ -68,14 +68,14 @@ export default function RegulaminContent() {
           w celu zweryfikowania statusu studenta.
         </li>
         <li>
-          Zgłoszenia Drużyny dokonuje każdy Uczestnik wchodzący w skład drużyny
-          z osobna, zgłaszając się poprzez formularz zgłoszeniowy. Zgłoszenie
-          drużyny jest jednoznaczne z zaakceptowaniem niniejszego Regulaminu
-          przez wszystkich uczestników wchodzących w skład Drużyny, a także
+          Zgłoszenia Drużyny dokonuje Uczestnik, wyznaczony do tego przez
+          pozostałych Uczestników, wchodzących w skład Drużyny. Zgłoszenie
+          Drużyny jest jednoznaczne z zaakceptowaniem niniejszego Regulaminu
+          przez wszystkich Uczestników wchodzących w skład Drużyny, a także
           wyrażeniem przez nich zgody na przetwarzanie danych osobowych przez
           Organizatora w celach związanych z organizacją Hackathonu, a także na
-          otrzymywanie korespondencji e-mail od Organizatora w celach związanych
-          z organizacją Hackathonu.
+          otrzymywanie korespondencji mailowej od Organizatora w celach
+          związanych z organizacją Hackathonu.
         </li>
         <li>
           W zależności od liczby zgłoszeń Organizator zastrzega sobie prawo do
@@ -85,25 +85,23 @@ export default function RegulaminContent() {
           podstawie formularza zgłoszeniowego.
         </li>
         <li>
-          Uczestnicy biorą pełną odpowiedzialność za własność osobistą (w tym
-          sprzęt komputerowy) i są zobligowani do jej pilnowania. Organizator
-          nie ponosi odpowiedzialności za ewentualne straty i uszkodzenia.
+          Organizator nie ponosi odpowiedzialności za ewentualne straty i
+          uszkodzenia we własności osobistej uczestników.
         </li>
         <li>
-          Uczestnik bierze odpowiedzialność za wszelkie uszczerbki na swoim
-          zdrowiu niepowstałe z winy Organizatora.
+          Organizator nie bierze odpowiedzialności za wszelkie uszczerbki na
+          zdrowiu powstałe z winy Uczestnika.
         </li>
         <li>
           Uczestnikom biorącym udział w kategorii „Robotycznej” Organizator
           udostępnia na czas Hackathonu dodatkowy sprzęt, który będą mogli
           wykorzystać do realizacji swoich projektów. Lista dostępnego sprzętu
-          będzie udostępniona uczestnikom na początku wydarzenia.
+          będzie udostępniona uczestnikom dnia 07.01.2023r.
         </li>
         <li>
           Uczestnicy korzystający z urządzeń i sprzętu zapewnionych przez
-          Organizatora są zobligowani do dbania o powierzony sprzęt oraz w
-          przypadku wszelkich awarii do ich natychmiastowego zgłoszenia
-          Organizatorowi.
+          Organizatora są zobligowani do dbania o powierzony sprzęt oraz do
+          zgłoszenia Organizatorowi wszelkich ewentualnych awarii.
         </li>
         <li>
           Uczestnicy ponoszą odpowiedzialność za używany sprzęt zapewniony przez
@@ -112,57 +110,41 @@ export default function RegulaminContent() {
           finansowej za ewentualne straty i uszkodzenia.
         </li>
         <li>
-          Uczestnik stwierdza, że nie ma żadnych przeciwwskazań zdrowotnych, aby
-          mógł uczestniczyć w Hackathonie, a także składa w dniu Hackathonu
-          oświadczenie o stanie zdrowia oraz że nie podlega on obowiązkowej
-          kwarantannie lub izolacji w związku z pandemią wirusa SARS-CoV-2.
-          Organizator nie ponosi odpowiedzialności z tego tytułu. Uczestnik
-          zobowiązuje się do przestrzegania obowiązujących rozporządzeń Rady
-          Ministrów związanych z pandemią COVID-19.
-        </li>
-        <li>
-          Uczestnik ma obowiązek samodzielnie wyposażyć się w maseczkę ochronną
-          zgodną z obowiązującymi rozporządzeniami Rady Ministrów związanych z
-          pandemią Covid-19
-        </li>
-        <li>
           Uczestnik odpowiada za wyrządzone przez siebie szkody na terenie
           obiektu, gdzie odbywać się będzie Hackathon.
         </li>
         <li>
           Nazwa Drużyny nie może zawierać wulgaryzmów, treści obraźliwych,
-          sloganów faszystowskich, nazistowskich, komunistycznych i innych
-          zabronionych przez polskie prawo, a także wszelkiego rodzaju treści,
-          które mogłyby zostać źle odebrane, w szczególności treści wzywających
-          do nienawiści lub mogących urazić czyjąkolwiek godność osobistą.
+          sloganów faszystowskich, nazistowskich, komunistycznych,
+          rasistowskich, seksistowskich i innych zabronionych przez polskie
+          prawo, a także wszelkiego rodzaju treści, które mogłyby zostać źle
+          odebrane, w szczególności treści wzywających do nienawiści lub
+          mogących urazić czyjąkolwiek godność osobistą.
         </li>
         <li>
           Uczestnicy zobowiązani są do stawienia się na miejscu wydarzenia w
-          podanym terminie.
+          terminie określonym w niniejszym regulaminie.
         </li>
         <li>
-          Uczestnicy mają pełną dowolność wyboru technologii, w których będą
+          czestnicy mają pełną dowolność wyboru technologii, w których będą
           tworzyli projekty konkursowe, jednak Organizator nie ma obowiązku
           zapewnienia żadnego dodatkowego sprzętu z tego tytułu.
         </li>
         <li>
-          Dozwolone jest wcześniejsze przygotowanie koncepcji i założeń
-          tworzonego oprogramowania oraz grafik, które zostaną wykorzystane w
-          oprogramowaniu lub w jego prezentacji.
-        </li>
-        <li>
-          Jeśli Uczestnicy kategorii “Robotycznej” chcą skorzystać dodatkowo z
+          Jeśli Uczestnicy kategorii Robotycznej chcą skorzystać dodatkowo z
           własnych części wymagane jest przesłanie ich listy do zatwierdzenia na
-          adres e-mail Organizatora do dnia 08.01.2022. Drużyna nie może
-          korzystać z części, które nie zostały zatwierdzone przez Organizatora.
+          adres e-mail Organizatora do dnia 10.01.2023. Drużyna nie może
+          korzystać z części, które nie zostały zatwierdzone przez Organizatora
+          pod karą dyskwalifikacji z udziału w hackathonie.
         </li>
-        <li>
-          Projekt musi w całości (poza elementami wyszczególnionymi w paragrafie
-          4, punkcie 17) powstać w czasie trwania Hackathonu.
-        </li>
+        <li>Projekt musi w całości powstać w czasie trwania Hackathonu.</li>
         <li>
           Organizator informuje, że program Hackathonu zakłada przez Uczestników
           wykonywanie czynności o dużej intensywności przez okres 24 godzin.
+        </li>
+        <li>
+          Uczestnik stwierdza, że nie ma żadnych przeciwwskazań zdrowotnych, aby
+          mógł uczestniczyć w Hackathonie.
         </li>
       </ol>
 
@@ -172,19 +154,19 @@ export default function RegulaminContent() {
         <li>
           Hackathon będzie przebiegał według harmonogramu udostępnionego
           Uczestnikom na początku wydarzenia. Organizator zastrzega sobie prawo
-          do zmiany harmonogramu w trakcie wydarzenia. Organizator ma obowiązek
-          podać do wiadomości Uczestników każdą zmianę w harmonogramie.
+          do zmiany harmonogramu w trakcie wydarzenia.
         </li>
         <li>
-          Organizator w trakcie Hackathonu zapewni: dostęp do Internetu,
-          zasilanie elektryczne, dodatkowy sprzęt dla uczestników kategorii
-          „Robotycznej” (paragraf 4, punkt 9), wyżywienie oraz napoje.
-          Organizator zapewnia także Uczestnikom dostęp do strefy relaksu przez
-          cały czas trwania wydarzenia.
+          Organizator w trakcie Hackathonu zapewni: dostęp do Internetu za
+          pomocą kabla ethernet, zasilanie elektryczne, dodatkowy sprzęt dla
+          uczestników kategorii „Robotycznej” (paragraf 4, punkt 10), wyżywienie
+          oraz napoje. Organizator zapewnia także Uczestnikom dostęp do strefy
+          relaksu przez cały czas trwania wydarzenia.
         </li>
         <li>
-          Przed prezentacją końcowego rozwiązania Uczestnicy umieszczają swoje
-          prezentacje w dowolnym otwartym repozytorium cyfrowym.
+          Przed prezentacją finałowego rozwiązania Uczestnicy umieszczają swoje
+          prezentacje w dowolnym repozytorium cyfrowym dostępnym dla
+          organizatorów.
         </li>
       </ol>
 
@@ -193,8 +175,8 @@ export default function RegulaminContent() {
       <ol className={styles['regulamin_list']}>
         <li>
           W ramach Hackathonu przeprowadzone zostaną niezależne od siebie
-          konkursy, których przedmiotem będzie rozwiązanie zadań z kategorii
-          “Klasycznej”, “Robotycznej” lub „AI”.
+          konkursy, których przedmiotem będzie opracowanie rozwiązań podanych
+          problemów z kategorii “Klasycznej”, “Robotycznej” lub „AI”.
         </li>
         <li>
           Zadania to zagadnienia z zakresu informatyki lub robotyki, polegające
@@ -209,13 +191,14 @@ export default function RegulaminContent() {
         <li>
           Każdy Konkurs z wyjątkiem kategorii “Robotycznej” rozpoczyna się
           przedstawieniem tematu zadania przez osobę wyznaczoną przez
-          Organizatora. Temat kategorii “Robotycznej” podany jest Uczestnikom 9
-          dni przed wydarzeniem.
+          Organizatora. Temat kategorii “Robotycznej” podany zostanie
+          Uczestnikom dnia 07.01.2023r.
         </li>
         <li>
           Po rozpoczęciu Hackathonu Uczestnicy mają 24 godziny na rozwiązanie
           zadań. Uczestnik ma możliwość ukończenia zadania wcześniej niż
-          wyznaczony czas.
+          wyznaczony czas, jednak organizator nie umożliwia prezentacji
+          rozwiązań wcześniej niż w czasie przewidzianym regulaminem.
         </li>
       </ol>
 
@@ -227,28 +210,20 @@ export default function RegulaminContent() {
         </li>
         <li>Wyrok Jury jest niepodważalny, nieodwołalny i ostateczny.</li>
         <li>
-          W trakcie Hackathonu, o godzinie uwzględnionej w harmonogramie
-          Hackathonu, Jury zarządza preeliminacje, tzn. wstępną ocenę projektów
-          zrealizowanych przez Drużyny. Jury ma prawo wykluczyć część Drużyn
-          (nie więcej niż połowę biorących udział w każdej kategorii) z udziału
-          w końcowej ocenie projektów. Drużyny wykluczone w preeliminacjach mają
-          prawo do dalszej pracy nad projektami, jednak nie będą uwzględniane
-          podczas oceny rozwiązań i nie mają możliwości zostać nagrodzone.
-          Wykluczanie drużyn przez Jury podczas preeliminacji odbywa się poprzez
-          wstępną ocenę prac według tych samych kryteriów, co finalna ocena
-          prac.
-        </li>
-        <li>
           W kategorii “Klasycznej” wyróżniono następujące kryteria oceniania
           wraz z maksymalną liczbą punktów do uzyskania:
           <ol className={styles['regulamin_list_2nd_level']}>
             <li>
               Innowacyjność i pomysłowość zaproponowanych rozwiązań – 15 pkt.
             </li>
-            <li>Stopień realizacji projektu – 20 pkt.</li>
+            <li>Poziom zaawansowania wykorzystanych technologii – 10 pkt.</li>
+            <li>Jakość programistyczna projektu - 15 pkt.</li>
             <li>Estetyka i wygląd projektu – 10 pkt.</li>
-            <li>Potencjał rozwojowy i biznesowy projektu – 10 pkt.</li>
-            <li>Zgodność z tematyką Hackathonu – 25 pkt.</li>
+            <li>
+              Potencjał do rozwoju, użyteczność biznesowa/naukowa/przemysłowa –
+              25 pkt.
+            </li>
+            <li>Zgodność z tematyką kategorii – 25 pkt.</li>
           </ol>
         </li>
         <li>
@@ -256,19 +231,22 @@ export default function RegulaminContent() {
           wraz z maksymalną liczbą punktów do uzyskania:
           <ol className={styles['regulamin_list_2nd_level']}>
             <li>
-              Innowacyjność i pomysłowość zaproponowanych rozwiązań – 20 pkt.
+              Innowacyjność i pomysłowość zaproponowanych rozwiązań – 25 pkt.
             </li>
-            <li>Stopień ukończenia projektu – 20 pkt.</li>
-            <li>Użytkowość i przydatność – 10 pkt.</li>
-            <li>Potencjał na rozwój projektu – 10 pkt.</li>
-            <li>Zgodność z tematyką Hackathonu – 25 pkt.</li>
+            <li>Poziom zaawansowania wykorzystanych rozwiązań - 10 pkt.</li>
+            <li>
+              Potencjał do rozwoju, użyteczność biznesowa/naukowa/przemysłowa –
+              25 pkt.
+            </li>
+            <li>Stopień ukończenia projektu – 10 pkt.</li>
+            <li>Zgodność z tematyką kategorii – 25 pkt.</li>
           </ol>
         </li>
         <li>
           W kategorii “AI” wyróżniono następujące kryteria oceniania wraz z
           maksymalną liczbą punktów do uzyskania:
           <ol className={styles['regulamin_list_2nd_level']}>
-            <li>Innowacyjność i pomysłowość - 20 pkt.</li>
+            <li>Innowacyjność i pomysłowość rozwiązania - 25 pkt.</li>
             <li>
               Realizacja projektu - 60 pkt, w szczególności:
               <ol className={styles['regulamin_list_3rd_level']}>
@@ -289,22 +267,18 @@ export default function RegulaminContent() {
           </ol>
         </li>
         <li>
-          W przypadku całkowitej niezgodności rozwiązania z tematem kategorii
-          "AI" Hackathonu, sekcje "Innowacyjność i pomysłowość" oraz "Potencjał
-          do rozwoju, użyteczność biznesowa/naukowa/przemysłowa" oceniane są na
-          0 pkt.
-        </li>
-        <li>
           Każdy członek Jury dokonuje indywidualnej, subiektywnej oceny
           wyceniając dany projekt na odpowiednią liczbę punktów: od 1 do
           maksymalnej liczby, przewidzianej w niniejszym Regulaminie w
-          paragrafie 7 pkt. 6, 7 i 8. Ocena końcowa jest sumą punktów
-          przyznanych przez każdego z członków Jury.
+          paragrafie 7 pkt. 3,4 i 5. Ocena końcowa jest sumą punktów przyznanych
+          przez każdego z członków Jury. Organizator powołuje Jury którego
+          kompetencją i obowiązkiem jest wybranie drużyn na podium każdej
+          kategorii.
         </li>
         <li>
-          W przypadku remisu, decyzja zostaje podjęta przez przewodniczącego
-          Jury, wybranego przez członków Jury spośród nich samych przed
-          rozpoczęciem Hackathonu.
+          W razie rażącej niezgodności z kategorią, Organizator zastrzega sobie
+          prawo do wyzerowania punktacji rozwiązania powstałego w czasie
+          wydarzenia.
         </li>
         <li>
           Zabronione jest dokonywanie jakichkolwiek zmian w projekcie po upływie
@@ -336,8 +310,8 @@ export default function RegulaminContent() {
           <ol className={styles['regulamin_list_2nd_level']}>
             <li>wulgarnych,</li>
             <li>
-              wzywających do nienawiści na tle rasowym, religijnym lub
-              jakimkolwiek innym,
+              wzywających do nienawiści na tle rasowym, płciowym, etnicznym,
+              narodowościowym, religijnym, lub jakimkolwiek innym,
             </li>
             <li>
               propagujących spożywanie alkoholu lub używanie jakichkolwiek
@@ -349,7 +323,15 @@ export default function RegulaminContent() {
         <li>
           Organizator zastrzega sobie prawo do opublikowania rozwiązań Drużyn na
           stronie internetowej Hackathonu, a także na portalach w serwisie
-          Facebook i Instagram Organizatora oraz Hackathonu.
+          Facebook, Instagram i Linkedin Organizatora oraz Hackathonu.
+        </li>
+        <li>
+          Jeżeli Uczestnicy w trakcie trwania wydarzenia skorzystają z dodatkowo
+          płatnej licencji bądź programu komputerowego w celu realizacji
+          projektu, Organizator nie ponosi odpowiedzialności za użyte dodatkowo
+          płatne licencje bądź programy. Organizator nie jest zobowiązany do
+          zwrotu pieniędzy z tytułu zakupionych dodatkowo płatnych licencji bądź
+          programów.
         </li>
       </ol>
 
@@ -362,12 +344,11 @@ export default function RegulaminContent() {
           bezwzględny zakaz nękania innych Uczestników. Za nękanie przyjmuje
           się: obraźliwe komentarze słowne dotyczące płci, tożsamości płciowej,
           wieku, orientacji seksualnej, niepełnosprawności, wyglądu fizycznego,
-          rozmiaru ciała, pochodzenia etnicznego, religii, umyślne zastraszanie,
-          prześladowanie i niepożądaną uwagę seksualną. Ponadto podczas
-          Hackathonu zabrania się używania słów oraz symboli powszechnie
-          uznanych za niedozwolone, w tym wulgaryzmów lub określeń mogących
-          powodować obrazę uczuć religijnych lub światopoglądowych, oraz
-          wskazujących na dyskryminację.
+          pochodzenia etnicznego, religii, umyślne zastraszanie, prześladowanie
+          i niepożądaną uwagę seksualną. Ponadto, podczas Hackathonu zabrania
+          się używania słów oraz symboli powszechnie uznanych za niedozwolone, w
+          tym wulgaryzmów lub określeń mogących powodować obrazę uczuć
+          religijnych lub światopoglądowych oraz wskazujących na dyskryminację.
         </li>
         <li>
           Uczestnicy są zobowiązani zgłosić niezwłocznie do Organizatora
@@ -388,13 +369,13 @@ export default function RegulaminContent() {
           dyskwalifikacją Drużyny z Hackathonu.
         </li>
         <li>
-          Podczas trwania Hackathonu Uczestników obowiązuje całkowity zakaz
-          spożywania alkoholu.
+          Podczas trwania Hackathonu, Uczestników obowiązuje całkowity zakaz
+          spożywania alkoholu oraz środków odurzających .
         </li>
         <li>
           Uczestnicy zobowiązani są w maksymalnym możliwym zakresie umożliwić
-          spokojną pracę pozostałym drużynom, a w szczególności zabronione jest:
-          celowe rozpraszanie pozostałych Drużyn podczas prezentacji oraz celowe
+          spokojną pracę pozostałym Drużynom, a w szczególności zabronione jest:
+          celowe rozpraszanie pozostałych Drużyn podczas prezentacji oraz
           uniemożliwianie pracy nad projektem pozostałym Drużynom.
         </li>
         <li>
@@ -418,18 +399,7 @@ export default function RegulaminContent() {
       <RegulaminSectionHeader header="§10" />
       <RegulaminSectionHeader header="POSTANOWIENIA KOŃCOWE" />
       <ol className={styles['regulamin_list']}>
-        <li>Niniejszy Regulamin wchodzi w życie z dniem 25.11.2021.</li>
-        <li>
-          Organizator w trakcie Hackathonu zapewni: dostęp do Internetu,
-          zasilanie elektryczne, dodatkowy sprzęt dla uczestników kategorii
-          „Robotycznej” (paragraf 4, punkt 9), wyżywienie oraz napoje.
-          Organizator zapewnia także Uczestnikom dostęp do strefy relaksu przez
-          cały czas trwania wydarzenia.
-        </li>
-        <li>
-          Uczestnik podczas rejestracji Drużyny składa oświadczenie, że zapoznał
-          się z niniejszym Regulaminem oraz akceptuje jest postanowienia.
-        </li>
+        <li>Niniejszy Regulamin wchodzi w życie z dniem 07.01.2023r.</li>
         <li>
           Uczestnicy zobowiązani są do przestrzegania postanowień Regulaminu.
           Organizator zastrzega sobie prawo do zdyskwalifikowania Uczestnika lub
@@ -443,25 +413,15 @@ export default function RegulaminContent() {
           przysługują im z tego tytułu żadne roszczenia względem Organizatora.
         </li>
         <li>
-          Organizator ma obowiązek przekazania danych osobowych uczestników
-          Państwowemu Powiatowemu Inspektorowi Sanitarnemu pełniącemu nadzór
-          epidemiologiczny na terenie wydarzenia i służbom porządkowym na ich
-          żądanie.
-        </li>
-        <li>
           Organizator zastrzega sobie prawo do zmiany terminu, formy lub
-          odwołania wydarzenia wyłącznie z przyczyn od niego niezależnych, które
+          odwołania wydarzenia z przyczyn od niego niezależnych, które
           uniemożliwiają przeprowadzenie Hackathonu w terminie oraz formie
           określonych w Regulaminie.
         </li>
         <li>
           Organizator zastrzega sobie prawo do zmiany Regulaminu z ważnych
-          przyczyn. Wszelkie zmiany Regulaminu, w tym w zakresie terminów
-          Konkursu zostaną niezwłocznie opublikowane na stronie internetowej
-          Hackathonu. O wszelkich zmianach Regulaminu Organizator poinformuje
-          również pocztą elektroniczną zarejestrowanych Uczestników. Zmiany
-          wchodzą w życie z chwilą ich publikacji na oficjalnej stronie
-          internetowej wydarzenia.
+          przyczyn. Uczestnicy zostaną niezwłocznie poinformowani przez
+          Organizatora o wszelkich zmianach dokonanych w regulaminie.
         </li>
         <li>
           Organizator jest uprawniony do utrwalania przebiegu Hackathonu za
@@ -481,6 +441,52 @@ export default function RegulaminContent() {
           niniejszego Regulaminu.
         </li>
       </ol>
+      <div style={{ height: '5vh' }}></div>
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="/rodo.pdf"
+        style={{
+          textAlign: 'center',
+          display: 'block',
+          color: 'white',
+          fontFamily: '"Open Sans", sans-serif',
+          fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
+          lineHeight: '1.35',
+        }}
+      >
+        Informacje o danych osobowych
+      </a>
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="/rodoCV.pdf"
+        style={{
+          textAlign: 'center',
+          display: 'block',
+          color: 'white',
+          fontFamily: '"Open Sans", sans-serif',
+          fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
+          lineHeight: '1.35',
+        }}
+      >
+        Informacje o danych osobowych CV
+      </a>
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href="/Regulamin-BEST-IT-Extended-Hackathon-BITEhack.pdf"
+        style={{
+          textAlign: 'center',
+          display: 'block',
+          color: 'white',
+          fontFamily: '"Open Sans", sans-serif',
+          fontSize: 'clamp(1rem, 2.5vw, 1.4rem)',
+          lineHeight: '1.35',
+        }}
+      >
+        Wersja PDF regulaminu
+      </a>
       <FooterRegulamin />
     </main>
   )

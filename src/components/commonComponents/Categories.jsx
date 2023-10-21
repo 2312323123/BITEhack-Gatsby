@@ -19,7 +19,7 @@ export default function Categories() {
         dowolnej 
         technologii. W 
         czasie trwania 
-        BITEhacka Twoim 
+        BITEhacka Waszym 
         zadaniem będzie 
         twórcze 
         rozwiązanie 
@@ -47,7 +47,7 @@ export default function Categories() {
         kompleksowym 
         wsparciu 
         mentorów. Używać 
-        będziesz platformy 
+        będziecie platformy 
         programistycznej, 
         dodatkowych 
         narzędzi, a także 

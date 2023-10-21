@@ -26,7 +26,7 @@ body {
 }
 
 .navbar_link {
-  color: white;
+  color: #b63c37;
   padding: 1rem;
   cursor: pointer;
   vertical-align: middle;
@@ -40,42 +40,34 @@ body {
   width: 100vw;
   z-index: 12;
 
-  /* display: grid; */ /* is in .nav-content-container-opened */
   grid-template-columns: 100%;
-  grid-template-rows:
-    3fr repeat(4, minmax(2rem, 1fr)) 2fr repeat(2, minmax(2rem, 1fr))
-    3fr;
+  grid-template-rows: 2fr repeat(3, minmax(2rem, 1fr)) 4.5fr;
   grid-auto-flow: column;
-  justify-content: end;
-  justify-items: end;
+  justify-items: start;
 
   padding-right: 2rem;
 
   background-size: 300% 300%, 300% 210%;
-  background-image: radial-gradient(
-      circle farthest-corner at 100% 0%,
-      navy,
-      transparent calc(200% / 3)
-    ),
-    radial-gradient(
-      circle farthest-corner at 100% calc(2000% / 21),
-      navy,
-      transparent 55%
-    );
+  background-image: linear-gradient(to right, #eed2bc 50%, transparent 50%);
 
   transition: background-position 1s;
-  /* animation: gradient 2s ease infinite; */
+}
+.nav_content_container_slow_transition {
+  transition: background-position 1.5s;
+}
+.nav_content_container_fast_transition {
+  transition: background-position 1s;
 }
 
 .nav_content_container_opened {
   display: grid;
-  background-position: 100% 0, 100% 100%;
+  background-position: 0 0, 0 100%;
 }
 
 .nav_content_container_closed {
   display: grid;
   pointer-events: none;
-  background-position: 0 100%, 0 0;
+  background-position: 100% 100%, 100% 0;
 }
 
 .nav_content_logo {
@@ -99,7 +91,6 @@ body {
     background-position: 0 100%, 0 0;
   }
   50% {
-    /* background-position: calc(200%/3) 0; */
     background-position: 100% 0, 100% 100%;
   }
   100% {

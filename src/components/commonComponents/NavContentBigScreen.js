@@ -1,10 +1,7 @@
 import * as React from 'react'
 import { useEffect, useState } from 'react'
 import { Link } from 'gatsby'
-// import { useWindowData } from '../../pages/index'
 import * as styles from '../../styles/nav_content_big_screen.module.css'
-
-import Logo from '../../images/BITEhack_text.svg'
 
 export default function NavContentBigScreen(props) {
   const [visible, setVisible] = useState(true)
@@ -24,7 +21,7 @@ export default function NavContentBigScreen(props) {
 
   return (
     <nav className={`${styles['nav']} ${visible ? '' : styles['hidden']}`}>
-      <img src={Logo} alt="BITEhack logo text" />
+      <div className={styles['big_nav_lines']}></div>
       <div className={styles['nav_button_background_container']}>
         <div className={styles['nav_button_background']}>
           <Link
@@ -36,12 +33,14 @@ export default function NavContentBigScreen(props) {
               blurOn: props.blurOn,
               electronicOn: props.electronicOn,
               contentScrolled: props.contentScrolled,
+              notRefreshed: true,
             }}
           >
             O projekcie
           </Link>
         </div>
       </div>
+      <div className={styles['big_nav_lines']}></div>
       <div className={styles['nav_button_background_container']}>
         <div className={styles['nav_button_background']}>
           <Link
@@ -53,6 +52,7 @@ export default function NavContentBigScreen(props) {
               blurOn: props.blurOn,
               electronicOn: props.electronicOn,
               contentScrolled: props.contentScrolled,
+              notRefreshed: true,
             }}
             style={{ zIndex: 50, position: 'fixed' }}
           >
@@ -60,6 +60,7 @@ export default function NavContentBigScreen(props) {
           </Link>
         </div>
       </div>
+      <div className={styles['big_nav_lines']}></div>
       <div className={styles['nav_button_background_container']}>
         <div className={styles['nav_button_background']}>
           <Link
@@ -71,12 +72,14 @@ export default function NavContentBigScreen(props) {
               blurOn: props.blurOn,
               electronicOn: props.electronicOn,
               contentScrolled: props.contentScrolled,
+              notRefreshed: true,
             }}
           >
             Regulamin
           </Link>
         </div>
       </div>
+      <div className={styles['big_nav_lines']}></div>
     </nav>
   )
 }

@@ -2,8 +2,6 @@ import * as React from 'react'
 import * as styles from '../../styles/moving_background.module.css'
 import { useEffect, useLayoutEffect, useState } from 'react'
 
-// import { useWindowData } from '../../pages/PagesProvider'
-
 export default function RuchomeTlo(props) {
   const [paralaxUp, setParalaxUp] = useState(true)
   const [contents, setContents] = useState({})
@@ -27,21 +25,21 @@ export default function RuchomeTlo(props) {
       for (let i = 0; i < little_count; i++) {
         shadows_1 += `${Math.round(Math.random() * windowWidth)}px ${Math.round(
           Math.random() * windowHeight
-        )}px #888,`
+        )}px #eed2bc,`
       }
       shadows_1 = shadows_1.slice(0, -1)
 
       for (let i = 0; i < medium_count; i++) {
         shadows_2 += `${Math.round(Math.random() * windowWidth)}px ${Math.round(
           Math.random() * windowHeight
-        )}px #888,`
+        )}px #eed2bc,`
       }
       shadows_2 = shadows_2.slice(0, -1)
 
       for (let i = 0; i < big_count; i++) {
         shadows_3 += `${Math.round(Math.random() * windowWidth)}px ${Math.round(
           Math.random() * windowHeight
-        )}px #888,`
+        )}px #eed2bc,`
       }
       shadows_3 = shadows_3.slice(0, -1)
 

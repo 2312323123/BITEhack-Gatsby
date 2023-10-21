@@ -1,10 +1,13 @@
 import * as React from 'react'
 import * as styles from '../../styles/footer.module.css'
-import logo from '../../images/logo_best.png'
+import logo from '../../images/logo_best_white.png'
+import FooterLimiter from './FooterLimiter'
+import Copyright from './Copyright'
 
 export default function Footer() {
   return (
     <>
+      <FooterLimiter />
       <footer className={styles['footer']}>
         <div>
           <p className={styles['footer_primary']}>Organizator</p>
@@ -35,6 +38,7 @@ export default function Footer() {
           </a>
         </div>
       </footer>
+      <Copyright />
     </>
   )
 }

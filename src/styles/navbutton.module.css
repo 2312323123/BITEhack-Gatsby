@@ -133,9 +133,8 @@ table {
 /* /reset */
 
 .bars {
-  width: 4rem;
-  height: 4rem;
-  /* background: navy; */
+  width: 5rem;
+  height: 5rem;
   position: relative;
   cursor: pointer;
 
@@ -144,12 +143,16 @@ table {
 
 .bar {
   width: 75%;
-  height: 0;
-  border: 0.25rem solid #fff8;
-  border-radius: 1rem;
+  height: 0.9rem;
   position: absolute;
-  filter: drop-shadow(3px 3px 3px white);
-  /* box-shadow: 2px 2px 4px white; */
+}
+
+.bar_orange {
+  background-color: #b63c37;
+}
+
+.bar_white {
+  background-color: #eed2bc;
 }
 
 .bars > div {
